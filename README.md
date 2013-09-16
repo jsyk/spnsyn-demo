@@ -1,7 +1,6 @@
-spnsyn-demo
-===========
+Hardware Sythesis of Synchronous Petri nets
+============================================
 
-Sythesis of Synchronous Petri nets (SPN) into hardware.
 
 Required tools
 ----------------
@@ -24,7 +23,7 @@ the digital waveforms generated in the GHDL simulator.
 Runnning the unit tests and examples
 --------------------------------------
 
-The t/ directory contains tests and examples. Run `make' in any of the subdirectories to execute the
+The t/ directory contains tests and examples. Run `make` in any of the subdirectories to execute the 
 test. This will generate RTL VHDL and run it through the GHDL simulator with a testbench. To
 visualize the output you may run `make show' afterwards; a gtkwave window will open and load the
 generated waveform.

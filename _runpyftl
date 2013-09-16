@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# This is a helper bash script for running python programs.
+# Not to be normally executed directly.
+# It adds the base directory into the python search path
+# and executes the preferred version of the python interpreter.
+#
+
+BASEDIR=$(dirname $0)
+export PYTHONPATH=$PYTHONPATH:$BASEDIR
+# echo $PYTHONPATH
+
+python3 $*
+# python3 -m cProfile $*
+# python3 -m cProfile -o profile.pstats $*

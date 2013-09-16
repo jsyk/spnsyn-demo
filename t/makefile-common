@@ -1,0 +1,70 @@
+# this makefile should be include from a test subdir
+
+PY_VHDOBJ = $(patsubst %.vhd,%.o,$(PY_VHD))
+PY_LOG = $(patsubst %.py,%.log,$(PY))
+TB_VHD ?= $(patsubst %.tb,%.vhd,$(TBDEF))
+TB_VHDOBJ = $(patsubst %.vhd,%.o,$(TB_VHD))
+TB_EXE = $(patsubst %.vhd,%,$(TB_VHD))
+# TB_VCD = $(patsubst %.vhd,%.vcd,$(TB_VHD))
+TB_GHW = $(patsubst %.vhd,%.ghw,$(TB_VHD))
+TB_LOG = $(patsubst %.vhd,%.log,$(TB_VHD))
+MORE_VHDOBJ ?=
+MORE_VHDDEPS_OBJ ?= $(patsubst %.vhd,%.o,$(MORE_VHDDEPS))
+MORE_CLEAN ?=
+R ?= -1
+TABULATE ?= 1
+VERIFY ?= 1
+
+# we use some bashism below
+SHELL=/bin/bash
+
+
+implicit: run
+
+
+ftlbase.o: ../ftlbase.vhd
+	ghdl -a --work=ftl ../ftlbase.vhd
+
+myutils.o: ../myutils.vhd
+
+$(PY_VHDOBJ): $(MORE_VHDDEPS_OBJ) $(PY_VHD) myutils.o
+
+$(PY_VHD): $(PY)
+	time ./$(PY) -r=$(R) --tabulate=$(TABULATE) --verify=$(VERIFY) |tee $(PY_LOG); exit $${PIPESTATUS[0]}
+
+$(TB_VHD): $(TBDEF)
+	if [ -e "$(TBDEF)" ]; then ../gentb.py $(TBDEF); fi
+
+$(TB_VHDOBJ): $(TB_VHD) $(PY_VHDOBJ) $(MORE_VHDOBJ)
+
+
+%.o: ../%.vhd
+	ghdl -a $<
+
+%.o: %.vhd
+	ghdl -a $<
+
+all_vhdobj: ftlbase.o myutils.o $(PY_VHDOBJ) $(TB_VHDOBJ) $(MORE_VHDOBJ)
+
+$(TB_EXE): all_vhdobj
+	ghdl -e $(TB_EXE)
+
+print_cfg:
+	@echo "TB_LOG="$(TB_LOG) >makefile-values
+
+all_exe: print_cfg $(TB_EXE)
+
+run: all_exe
+	./$(TB_EXE) --wave=$(TB_GHW) 2>$(TB_LOG)
+	@echo "Testbench errors: " `grep "assertion error" $(TB_LOG) | wc -l`
+
+clean:
+	rm -f *.o *.vcd *.ghw *.log *.cf makefile-values
+	if [ -n "$(TBDEF)" ]; then rm -f $(TB_VHD) $(TB_EXE); fi
+	rm -f $(TB_EXE) $(PY_VHD) $(PY_LOG) $(MORE_VHDOBJ) $(MORE_CLEAN)
+
+show:
+	gtkwave $(TB_GHW)
+
+%.png: %.pstats
+	gprof2dot.py -f pstats $< | dot -Tpng -o $@

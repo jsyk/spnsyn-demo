@@ -1,0 +1,2 @@
+vhdl ftl "..//..//ftlbase.vhd"
+vhdl work "..//tslink_ct.vhd"

@@ -1,0 +1,10 @@
+run
+-ifn xst.prj
+-ifmt Mixed
+-p xc6slx150t-fgg676-3
+-bufg 0
+-top tslink_ct
+-ofn tslink_ct.ngc
+-ofmt NGC
+-opt_mode area
+-opt_level 2

@@ -1,0 +1,335 @@
+# wisent source code of the language definition
+
+### file
+
+start
+    : def_stmt+
+    ;
+
+### def statement
+
+def_stmt
+    : def_prototype 'is' _def_body ';'
+    ;
+
+def_prototype
+    : 'def' ID param_list? typespec? when_cond?
+    ;
+
+param_list
+    : '(' _param_list ')'
+    ;
+
+_param_list
+    : param (',' param)*
+    ;
+
+param
+    : ID (typespec)? (':=' expr )?
+    ;
+
+_def_body
+    : cluster
+    | typespec
+    | value_expr
+    ;
+
+### pipeline flow
+
+pipeline
+    : (_pipeline_item )+
+    ;
+
+_pipeline_item
+    : component
+    | cluster
+    | piperef
+    | let_stmt
+    | def_stmt
+    ;
+
+cluster
+    : '{' _pipeline_list  '}'
+    ;
+
+_pipeline_list
+    : (when_cond ':')? pipeline ('|' (when_cond ':')? pipeline)*
+    ;
+
+when_cond
+    : 'when' value_expr
+    ;
+
+# TODO: arrays of lets and components
+component
+      # this is not precise; if the second qual_id is present, the first one is only an ID
+    : qual_id ( ':' qual_id)? arg_list? typespec?
+    ;
+
+let_stmt
+    : 'let' value_expr typespec?
+    ;
+
+piperef
+    : _piperef_left _pipename _piperef_right typespec?
+    | '=>' typespec?        # as 'shuffle'
+    ;
+
+_piperef_left
+    : '=<'
+    | '<'
+    ;
+
+_piperef_right
+    : '>'
+    | '>='
+    ;
+
+_pipename
+    : ID
+    ## | NUMBER ('f' | 'b')
+    ;
+
+value_expr
+    : '(' expr ')'
+    ;
+
+### types
+
+typespec
+    : '[' typespec_list ( '=>' typespec_list)? ']'
+    ;
+
+typespec_list
+    : typesig (',' typesig)*
+    ;
+
+typesig
+    : typeref
+    | cluster_type
+    | value_type
+    | array_type
+    ;
+
+typeref
+    : qual_id arg_list?
+    ;
+
+array_type
+    : 'array' param_list 'of' typesig
+    ;
+
+
+#as_array
+#    : 'array' arg_list
+#    ;
+
+
+cluster_type
+    : (ID ':')? '{' _cluster_type_list '}'
+    ;
+
+_cluster_type_list
+    : _cluster_type_item ( '|' _cluster_type_item)*
+    ;
+
+_cluster_type_item
+    : cluster_type
+    | any_cluster_type                          # don't care
+    | typeref                                   # other type name by ref
+    | cluster_pipe_type
+    |                           # empty
+    ;
+
+any_cluster_type
+    : '*'
+    ;
+
+cluster_pipe_type
+    : '<' _pipename '>' typespec?
+    ;
+
+
+value_type
+    : rec_v_type
+    | enum_v_type
+    ;
+
+# 'record' is mandatory
+rec_v_type
+    : ('record' | 'union')  '(' _rec_v_type_list ')'
+    ;
+
+_rec_v_type_list
+    : rec_v_type_item (',' rec_v_type_item)*
+    ;
+
+rec_v_type_item
+    : ID typespec
+    ;
+
+
+enum_v_type
+    : 'enum' '(' _enum_v_type_list ')'
+    ;
+
+_enum_v_type_list
+    : enum_v_type_item (',' enum_v_type_item)*
+    ;
+
+enum_v_type_item
+    : ID (':=' expr)?               # enum item name, optional const value
+    ;
+
+###
+expr_list
+    : _expr_list_nonempty ?
+    ;
+
+_expr_list_nonempty
+    : expr (',' expr)*
+    ;
+
+###
+expr
+    : _logicfun
+    ;
+
+###
+_logicfun
+    : conjuction
+    | disjuction
+    | _testative
+    ;
+
+conjuction
+    : _logicfun 'and' _testative
+    ;
+
+disjuction
+    : _logicfun 'or' _testative
+    ;
+
+
+###
+_testative
+    : equality
+    | inequality
+    | less_than
+    | less_eq_than
+    | greater_than
+    | greater_eq_than
+    | _additive
+    ;
+
+equality
+    : _testative '=' _additive
+    ;
+
+inequality
+    : _testative '/=' _additive
+    ;
+
+less_than
+    : _testative '<' _additive
+    ;
+
+less_eq_than
+    : _testative '<=' _additive
+    ;
+
+greater_than
+    : _testative '>' _additive
+    ;
+
+greater_eq_than
+    : _testative '>=' _additive
+    ;
+
+###
+_additive
+    : addition 
+    | difference 
+    | _multiplicative 
+    ;
+
+addition
+    : _additive '+' _multiplicative
+    ;
+
+difference
+    : _additive '-' _multiplicative
+    ;
+
+###
+_multiplicative
+    : product 
+    | quotient 
+    | _exponentiative 
+    ;
+
+product
+    : _multiplicative '*' _exponentiative
+    ;
+
+quotient
+    : _multiplicative '/' _exponentiative
+    ;
+
+###
+_exponentiative
+    : complement
+    | power
+    | _structured
+    ;
+
+complement
+    : 'not' _structured
+    ;
+
+power
+    : _exponentiative '**' _structured
+    ;
+
+
+###
+
+_structured
+    : field_by_name
+    | ap_fun
+    | _primary
+    ;
+
+field_by_name
+    : _structured '.' ID
+    ;
+
+ap_fun
+    : _structured arg_list
+    ;
+
+###
+
+## qual_id is in principle wrong!!
+qual_id
+    : ID ('.' ID)*
+    ;
+
+_primary
+    : NUMBER
+    | ID            # primary top-level id reference
+    | '.'
+    | brackets
+    ;
+
+brackets
+    : '(' _logicfun ')'
+    ;
+
+#funap
+#    : qual_id arg_list?
+#    ;
+
+arg_list
+    : '(' expr_list ')'
+    ;

@@ -1,0 +1,30 @@
+
+parse tree
+    Parse2AST
+ast
+    Precompile?
+implicit tubes
+    InferTypes
+types, dynamic flow
+    Elaborate
+static tubes
+    Flatten
+explicit tubes (removed structure, flatten)
+    Optimize**
+.
+    Lower/Decompose
+pipe netlist
+    Compile
+fsm equations
+
+
+
+tube = cluster of clusters or pipes, non synchronized
+    - type represented by cluster syntax: { | }
+pipe = synchronized
+data types = allow for tuples
+
+T1 = { | } = T2
+
+Do all the elaboration, typing, dispatching in the implicit flow form - to be able to generate SVG graphics afterwards.
+Do all the optimizations in the flattened form - to be independent of the input source code structure.

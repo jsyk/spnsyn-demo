@@ -1,0 +1,2793 @@
+Hostname=megalit.local, seed=[-1]
+Element P1 : ICell
+    FS10...
+    FS10 : std_ulogic :F= !PP1st0;
+    FP11...
+    FP11 : std_ulogic :F= PP1st0;
+    DP11...
+    DP11 : ?? :D= DP1st0;
+    PP1st0...
+    PP1st0 : std_ulogic :P= @@ff(FS10, (FP11 | !PP1st0), True);
+    DP1st0...
+    DP1st0 : void_t :D= @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+Element P2 : ICell
+    FT11...
+    FT11 : std_ulogic :F= !PP2st0;
+    FP21...
+    FP21 : std_ulogic :F= PP2st0;
+    DP21...
+    DP21 : ?? :D= DP2st0;
+    PP2st0...
+    PP2st0 : std_ulogic :P= @@ff(FT11, (FP21 | !PP2st0), False);
+    DP2st0...
+    DP2st0 : void_t :D= @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+Element P11 : ICell
+    FT10F1...
+    FT10F1 : std_ulogic :F= !PP11st0;
+    FP111...
+    FP111 : std_ulogic :F= PP11st0;
+    DP111...
+    DP111 : ?? :D= DP11st0;
+    PP11st0...
+    PP11st0 : std_ulogic :P= @@ff(FT10F1, (FP111 | !PP11st0), False);
+    DP11st0...
+    DP11st0 : void_t :D= @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+Element P12 : ICell
+    FT111...
+    FT111 : std_ulogic :F= !PP12st0;
+    FP121...
+    FP121 : std_ulogic :F= PP12st0;
+    DP121...
+    DP121 : ?? :D= DP12st0;
+    PP12st0...
+    PP12st0 : std_ulogic :P= @@ff(FT111, (FP121 | !PP12st0), True);
+    DP12st0...
+    DP12st0 : void_t :D= @@ff(DT111, (FP121 | !PP12st0), @@zero_const_tp());
+Element P14 : ICell
+    FT3F2...
+    FT3F2 : std_ulogic :F= !PP14st0;
+    FP141...
+    FP141 : std_ulogic :F= PP14st0;
+    DP141...
+    DP141 : ?? :D= DP14st0;
+    PP14st0...
+    PP14st0 : std_ulogic :P= @@ff(FT3F2, (FP141 | !PP14st0), False);
+    DP14st0...
+    DP14st0 : void_t :D= @@ff(DT3F2, (FP141 | !PP14st0), @@zero_const_tp());
+Element P15 : ICell
+    FT5J0...
+    FT5J0 : std_ulogic :F= !PP15st0;
+    FP151...
+    FP151 : std_ulogic :F= PP15st0;
+    DP151...
+    DP151 : ?? :D= DP15st0;
+    PP15st0...
+    PP15st0 : std_ulogic :P= @@ff(FT5J0, (FP151 | !PP15st0), False);
+    DP15st0...
+    DP15st0 : void_t :D= @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+Element P16 : ICell
+    FT6F2...
+    FT6F2 : std_ulogic :F= !PP16st0;
+    FP161...
+    FP161 : std_ulogic :F= PP16st0;
+    DP161...
+    DP161 : ?? :D= DP16st0;
+    PP16st0...
+    PP16st0 : std_ulogic :P= @@ff(FT6F2, (FP161 | !PP16st0), False);
+    DP16st0...
+    DP16st0 : void_t :D= @@ff(DT6F2, (FP161 | !PP16st0), @@zero_const_tp());
+Element P17 : ICell
+    FS40...
+    FS40 : std_ulogic :F= !PP17st0;
+    FP171...
+    FP171 : std_ulogic :F= PP17st0;
+    DP171...
+    DP171 : ?? :D= DP17st0;
+    PP17st0...
+    PP17st0 : std_ulogic :P= @@ff(FS40, (FP171 | !PP17st0), True);
+    DP17st0...
+    DP17st0 : void_t :D= @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+Element P28 : ICell
+    FT9F1...
+    FT9F1 : std_ulogic :F= !PP28st0;
+    FP281...
+    FP281 : std_ulogic :F= PP28st0;
+    DP281...
+    DP281 : ?? :D= DP28st0;
+    PP28st0...
+    PP28st0 : std_ulogic :P= @@ff(FT9F1, (FP281 | !PP28st0), False);
+    DP28st0...
+    DP28st0 : void_t :D= @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+Element P29 : ICell
+    FT7G1...
+    FT7G1 : std_ulogic :F= !PP29st0;
+    FP291...
+    FP291 : std_ulogic :F= PP29st0;
+    DP291...
+    DP291 : ?? :D= DP29st0;
+    PP29st0...
+    PP29st0 : std_ulogic :P= @@ff(FT7G1, (FP291 | !PP29st0), True);
+    DP29st0...
+    DP29st0 : void_t :D= @@ff(DT7G1, (FP291 | !PP29st0), @@zero_const_tp());
+Element T1 : Gate
+    FP11...
+    FP11 : std_ulogic :F= (PP1st0 & FT11);
+    FT11...
+    FT11 : std_ulogic :F= (!PP2st0 & FP11 & S_LinkIn);
+    DT11...
+    DT11 : ?? :D= DP11;
+Element S1 : Select_Pri
+    FS1_cnd0...
+    FS1_cnd0 : std_ulogic :F= FT10F2;
+    FS1_cnd1...
+    FS1_cnd1 : std_ulogic :F= FT3F1;
+    FS10...
+    FS10 : std_ulogic :F= (!PP1st0 & @@swisel(S1, 0, FS10, FT10F2, FT3F1));
+    FT10F2...
+    FT10F2 : std_ulogic :F= (FS1_cnd0 & @@swisel(S1, 1, FS10, FT10F2, FT3F1));
+    FT3F1...
+    FT3F1 : std_ulogic :F= (FS1_cnd1 & @@swisel(S1, 2, FS10, FT10F2, FT3F1));
+    DS10...
+    DS10 : ?? :D= (FS1_cnd0 ? (DT10F2 : DT3F1));
+Element S2 : Switch_Cond
+    FS2_cnd0...
+    FS2_cnd0 : std_ulogic :F= !S_LinkIn;
+    FS2_cnd1...
+    FS2_cnd1 : std_ulogic :F= S_LinkIn;
+    FP21...
+    FP21 : std_ulogic :F= (PP2st0 & @@swisel(S2, 0, FP21, FS21, FS22));
+    FS21...
+    FS21 : std_ulogic :F= (FS2_cnd0 & @@swisel(S2, 1, FP21, FS21, FS22));
+    FS22...
+    FS22 : std_ulogic :F= (FS2_cnd1 & @@swisel(S2, 2, FP21, FS21, FS22));
+    DS21...
+    DS21 : ?? :D= DP21;
+    DS22...
+    DS22 : ?? :D= DP21;
+Element T10J : Join
+    FT10J0...
+    FT10J0 : std_ulogic :F= (FP281 & FS21);
+    FP281...
+    FP281 : std_ulogic :F= (PP28st0 & FT10J0 & FS21);
+    FS21...
+    FS21 : std_ulogic :F= (FS2_cnd0 & @@swisel(S2, 1, FP21, FS21, FS22) & FT10J0 & FP281);
+    DT10J0...
+    DT10J0 : ?? :D= @!NONE!(DP281, DS21, @@nofo(FT10J0));
+Element T10F : Fork
+    FT10J0...
+    FT10J0 : std_ulogic :F= (FP281 & FS21 & FT10F1 & FT10F2);
+    FT10F1...
+    FT10F1 : std_ulogic :F= (!PP11st0 & FT10J0 & FT10F2);
+    FT10F2...
+    FT10F2 : std_ulogic :F= (FS1_cnd0 & @@swisel(S1, 1, FS10, FT10F2, FT3F1) & FT10J0 & FT10F1);
+    DT10F1...
+    DT10F1 : ?? :D= DT10J0;
+    DT10F2...
+    DT10F2 : ?? :D= DT10J0;
+Element T11 : Gate
+    FP111...
+    FP111 : std_ulogic :F= (PP11st0 & FT111);
+    FT111...
+    FT111 : std_ulogic :F= (!PP12st0 & FP111 & !S_IValid);
+    DT111...
+    DT111 : ?? :D= DP111;
+Element T8J : Join
+    FT8J0...
+    FT8J0 : std_ulogic :F= (FP121 & FS32);
+    FP121...
+    FP121 : std_ulogic :F= (PP12st0 & FT8J0 & FS32);
+    FS32...
+    FS32 : std_ulogic :F= (FT8J0 & FP121);
+    DT8J0...
+    DT8J0 : ?? :D= @!NONE!(DP121, DS32, @@nofo(FT8J0));
+Element T8G : Gate
+    FT8J0...
+    FT8J0 : std_ulogic :F= (FP121 & FS32 & FT8G1);
+    FT8G1...
+    FT8G1 : std_ulogic :F= (FT8J0 & S_IValid);
+    DT8G1...
+    DT8G1 : ?? :D= DT8J0;
+Element S3 : Switch_Pri
+    FS3_cnd0...
+    FS3_cnd0 : std_ulogic :F= FS31;
+    FS3_cnd1...
+    FS3_cnd1 : std_ulogic :F= FS32;
+    FP171...
+    FP171 : std_ulogic :F= (PP17st0 & @@swisel(S3, 0, FP171, FS31, FS32));
+    FS31...
+    FS31 : std_ulogic :F= (FS3_cnd0 & @@swisel(S3, 1, FP171, FS31, FS32));
+    FS32...
+    FS32 : std_ulogic :F= (FT8J0 & FP121 & FS3_cnd1 & @@swisel(S3, 2, FP171, FS31, FS32));
+    DS31...
+    DS31 : ?? :D= DP171;
+    DS32...
+    DS32 : ?? :D= DP171;
+Element S4 : Select_Pri
+    FS4_cnd0...
+    FS4_cnd0 : std_ulogic :F= FT9F2;
+    FS4_cnd1...
+    FS4_cnd1 : std_ulogic :F= FT6F1;
+    FS40...
+    FS40 : std_ulogic :F= (!PP17st0 & @@swisel(S4, 0, FS40, FT9F2, FT6F1));
+    FT9F2...
+    FT9F2 : std_ulogic :F= (FS4_cnd0 & @@swisel(S4, 1, FS40, FT9F2, FT6F1));
+    FT6F1...
+    FT6F1 : std_ulogic :F= (FS4_cnd1 & @@swisel(S4, 2, FS40, FT9F2, FT6F1));
+    DS40...
+    DS40 : ?? :D= (FS4_cnd0 ? (DT9F2 : DT6F1));
+Element T9F : Fork
+    FP2S_C91...
+    FP2S_C91 : std_ulogic :F= (FT9F1 & FT9F2);
+    FT9F1...
+    FT9F1 : std_ulogic :F= (!PP28st0 & FP2S_C91 & FT9F2);
+    FT9F2...
+    FT9F2 : std_ulogic :F= (FS4_cnd0 & @@swisel(S4, 1, FS40, FT9F2, FT6F1) & FP2S_C91 & FT9F1);
+    DT9F1...
+    DT9F1 : ?? :D= DP2S_C91;
+    DT9F2...
+    DT9F2 : ?? :D= DP2S_C91;
+Element P2S_C0 : ICell
+    FT8G1...
+    FT8G1 : std_ulogic :F= (FT8J0 & S_IValid & !PP2S_C0st0);
+    FP2S_C01...
+    FP2S_C01 : std_ulogic :F= PP2S_C0st0;
+    DP2S_C01...
+    DP2S_C01 : ?? :D= DP2S_C0st0;
+    PP2S_C0st0...
+    PP2S_C0st0 : std_ulogic :P= @@ff(FT8G1, (FP2S_C01 | !PP2S_C0st0), False);
+    DP2S_C0st0...
+    DP2S_C0st0 : void_t :D= @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+Element P2S_C1 : ICell
+    FP2S_C01...
+    FP2S_C01 : std_ulogic :F= (PP2S_C0st0 & !PP2S_C1st0);
+    FP2S_C11...
+    FP2S_C11 : std_ulogic :F= PP2S_C1st0;
+    DP2S_C11...
+    DP2S_C11 : ?? :D= DP2S_C1st0;
+    PP2S_C1st0...
+    PP2S_C1st0 : std_ulogic :P= @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+    DP2S_C1st0...
+    DP2S_C1st0 : void_t :D= @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+Element P2S_C2 : ICell
+    FP2S_C11...
+    FP2S_C11 : std_ulogic :F= (PP2S_C1st0 & !PP2S_C2st0);
+    FP2S_C21...
+    FP2S_C21 : std_ulogic :F= PP2S_C2st0;
+    DP2S_C21...
+    DP2S_C21 : ?? :D= DP2S_C2st0;
+    PP2S_C2st0...
+    PP2S_C2st0 : std_ulogic :P= @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+    DP2S_C2st0...
+    DP2S_C2st0 : void_t :D= @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+Element P2S_C3 : ICell
+    FP2S_C21...
+    FP2S_C21 : std_ulogic :F= (PP2S_C2st0 & !PP2S_C3st0);
+    FP2S_C31...
+    FP2S_C31 : std_ulogic :F= PP2S_C3st0;
+    DP2S_C31...
+    DP2S_C31 : ?? :D= DP2S_C3st0;
+    PP2S_C3st0...
+    PP2S_C3st0 : std_ulogic :P= @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+    DP2S_C3st0...
+    DP2S_C3st0 : void_t :D= @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+Element P2S_C4 : ICell
+    FP2S_C31...
+    FP2S_C31 : std_ulogic :F= (PP2S_C3st0 & !PP2S_C4st0);
+    FP2S_C41...
+    FP2S_C41 : std_ulogic :F= PP2S_C4st0;
+    DP2S_C41...
+    DP2S_C41 : ?? :D= DP2S_C4st0;
+    PP2S_C4st0...
+    PP2S_C4st0 : std_ulogic :P= @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+    DP2S_C4st0...
+    DP2S_C4st0 : void_t :D= @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+Element P2S_C5 : ICell
+    FP2S_C41...
+    FP2S_C41 : std_ulogic :F= (PP2S_C4st0 & !PP2S_C5st0);
+    FP2S_C51...
+    FP2S_C51 : std_ulogic :F= PP2S_C5st0;
+    DP2S_C51...
+    DP2S_C51 : ?? :D= DP2S_C5st0;
+    PP2S_C5st0...
+    PP2S_C5st0 : std_ulogic :P= @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+    DP2S_C5st0...
+    DP2S_C5st0 : void_t :D= @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+Element P2S_C6 : ICell
+    FP2S_C51...
+    FP2S_C51 : std_ulogic :F= (PP2S_C5st0 & !PP2S_C6st0);
+    FP2S_C61...
+    FP2S_C61 : std_ulogic :F= PP2S_C6st0;
+    DP2S_C61...
+    DP2S_C61 : ?? :D= DP2S_C6st0;
+    PP2S_C6st0...
+    PP2S_C6st0 : std_ulogic :P= @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+    DP2S_C6st0...
+    DP2S_C6st0 : void_t :D= @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+Element P2S_C7 : ICell
+    FP2S_C61...
+    FP2S_C61 : std_ulogic :F= (PP2S_C6st0 & !PP2S_C7st0);
+    FP2S_C71...
+    FP2S_C71 : std_ulogic :F= PP2S_C7st0;
+    DP2S_C71...
+    DP2S_C71 : ?? :D= DP2S_C7st0;
+    PP2S_C7st0...
+    PP2S_C7st0 : std_ulogic :P= @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+    DP2S_C7st0...
+    DP2S_C7st0 : void_t :D= @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+Element P2S_C8 : ICell
+    FP2S_C71...
+    FP2S_C71 : std_ulogic :F= (PP2S_C7st0 & !PP2S_C8st0);
+    FP2S_C81...
+    FP2S_C81 : std_ulogic :F= PP2S_C8st0;
+    DP2S_C81...
+    DP2S_C81 : ?? :D= DP2S_C8st0;
+    PP2S_C8st0...
+    PP2S_C8st0 : std_ulogic :P= @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+    DP2S_C8st0...
+    DP2S_C8st0 : void_t :D= @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+Element P2S_C9 : ICell
+    FP2S_C81...
+    FP2S_C81 : std_ulogic :F= (PP2S_C8st0 & !PP2S_C9st0);
+    FP2S_C91...
+    FP2S_C91 : std_ulogic :F= (FT9F1 & FT9F2 & PP2S_C9st0);
+    DP2S_C91...
+    DP2S_C91 : ?? :D= DP2S_C9st0;
+    PP2S_C9st0...
+    PP2S_C9st0 : std_ulogic :P= @@ff(FP2S_C81, (FP2S_C91 | !PP2S_C9st0), False);
+    DP2S_C9st0...
+    DP2S_C9st0 : void_t :D= @@ff(DP2S_C81, (FP2S_C91 | !PP2S_C9st0), @@zero_const_tp());
+Element S2P_C0 : ICell
+    FS22...
+    FS22 : std_ulogic :F= (FS2_cnd1 & @@swisel(S2, 2, FP21, FS21, FS22) & !PS2P_C0st0);
+    FS2P_C01...
+    FS2P_C01 : std_ulogic :F= PS2P_C0st0;
+    DS2P_C01...
+    DS2P_C01 : ?? :D= DS2P_C0st0;
+    PS2P_C0st0...
+    PS2P_C0st0 : std_ulogic :P= @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+    DS2P_C0st0...
+    DS2P_C0st0 : void_t :D= @@ff(DS22, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+Element S2P_C1 : ICell
+    FS2P_C01...
+    FS2P_C01 : std_ulogic :F= (PS2P_C0st0 & !PS2P_C1st0);
+    FS2P_C11...
+    FS2P_C11 : std_ulogic :F= PS2P_C1st0;
+    DS2P_C11...
+    DS2P_C11 : ?? :D= DS2P_C1st0;
+    PS2P_C1st0...
+    PS2P_C1st0 : std_ulogic :P= @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+    DS2P_C1st0...
+    DS2P_C1st0 : void_t :D= @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+Element S2P_C2 : ICell
+    FS2P_C11...
+    FS2P_C11 : std_ulogic :F= (PS2P_C1st0 & !PS2P_C2st0);
+    FS2P_C21...
+    FS2P_C21 : std_ulogic :F= PS2P_C2st0;
+    DS2P_C21...
+    DS2P_C21 : ?? :D= DS2P_C2st0;
+    PS2P_C2st0...
+    PS2P_C2st0 : std_ulogic :P= @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+    DS2P_C2st0...
+    DS2P_C2st0 : void_t :D= @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+Element S2P_C3 : ICell
+    FS2P_C21...
+    FS2P_C21 : std_ulogic :F= (PS2P_C2st0 & !PS2P_C3st0);
+    FS2P_C31...
+    FS2P_C31 : std_ulogic :F= PS2P_C3st0;
+    DS2P_C31...
+    DS2P_C31 : ?? :D= DS2P_C3st0;
+    PS2P_C3st0...
+    PS2P_C3st0 : std_ulogic :P= @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+    DS2P_C3st0...
+    DS2P_C3st0 : void_t :D= @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+Element S2P_C4 : ICell
+    FS2P_C31...
+    FS2P_C31 : std_ulogic :F= (PS2P_C3st0 & !PS2P_C4st0);
+    FS2P_C41...
+    FS2P_C41 : std_ulogic :F= PS2P_C4st0;
+    DS2P_C41...
+    DS2P_C41 : ?? :D= DS2P_C4st0;
+    PS2P_C4st0...
+    PS2P_C4st0 : std_ulogic :P= @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+    DS2P_C4st0...
+    DS2P_C4st0 : void_t :D= @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+Element S2P_C5 : ICell
+    FS2P_C41...
+    FS2P_C41 : std_ulogic :F= (PS2P_C4st0 & !PS2P_C5st0);
+    FS2P_C51...
+    FS2P_C51 : std_ulogic :F= PS2P_C5st0;
+    DS2P_C51...
+    DS2P_C51 : ?? :D= DS2P_C5st0;
+    PS2P_C5st0...
+    PS2P_C5st0 : std_ulogic :P= @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+    DS2P_C5st0...
+    DS2P_C5st0 : void_t :D= @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+Element S2P_C6 : ICell
+    FS2P_C51...
+    FS2P_C51 : std_ulogic :F= (PS2P_C5st0 & !PS2P_C6st0);
+    FS2P_C61...
+    FS2P_C61 : std_ulogic :F= PS2P_C6st0;
+    DS2P_C61...
+    DS2P_C61 : ?? :D= DS2P_C6st0;
+    PS2P_C6st0...
+    PS2P_C6st0 : std_ulogic :P= @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+    DS2P_C6st0...
+    DS2P_C6st0 : void_t :D= @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+Element S2P_C7 : ICell
+    FS2P_C61...
+    FS2P_C61 : std_ulogic :F= (PS2P_C6st0 & !PS2P_C7st0);
+    FS2P_C71...
+    FS2P_C71 : std_ulogic :F= PS2P_C7st0;
+    DS2P_C71...
+    DS2P_C71 : ?? :D= DS2P_C7st0;
+    PS2P_C7st0...
+    PS2P_C7st0 : std_ulogic :P= @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+    DS2P_C7st0...
+    DS2P_C7st0 : void_t :D= @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+Element S2P_C8 : ICell
+    FS2P_C71...
+    FS2P_C71 : std_ulogic :F= (PS2P_C7st0 & !PS2P_C8st0);
+    FS2P_C81...
+    FS2P_C81 : std_ulogic :F= PS2P_C8st0;
+    DS2P_C81...
+    DS2P_C81 : ?? :D= DS2P_C8st0;
+    PS2P_C8st0...
+    PS2P_C8st0 : std_ulogic :P= @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+    DS2P_C8st0...
+    DS2P_C8st0 : void_t :D= @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+Element T3J : Join
+    FT3J0...
+    FT3J0 : std_ulogic :F= (FS2P_C81 & FP291);
+    FS2P_C81...
+    FS2P_C81 : std_ulogic :F= (PS2P_C8st0 & FT3J0 & FP291);
+    FP291...
+    FP291 : std_ulogic :F= (PP29st0 & FT3J0 & FS2P_C81);
+    DT3J0...
+    DT3J0 : ?? :D= @!NONE!(DS2P_C81, DP291, @@nofo(FT3J0));
+Element T3F : Fork
+    FT3J0...
+    FT3J0 : std_ulogic :F= (FS2P_C81 & FP291 & FT3F1 & FT3F2);
+    FT3F1...
+    FT3F1 : std_ulogic :F= (FS1_cnd1 & @@swisel(S1, 2, FS10, FT10F2, FT3F1) & FT3J0 & FT3F2);
+    FT3F2...
+    FT3F2 : std_ulogic :F= (!PP14st0 & FT3J0 & FT3F1);
+    DT3F1...
+    DT3F1 : ?? :D= DT3J0;
+    DT3F2...
+    DT3F2 : ?? :D= DT3J0;
+Element T5J : Join
+    FT5J0...
+    FT5J0 : std_ulogic :F= (!PP15st0 & FS31 & FP141);
+    FS31...
+    FS31 : std_ulogic :F= (FS3_cnd0 & @@swisel(S3, 1, FP171, FS31, FS32) & FT5J0 & FP141);
+    FP141...
+    FP141 : std_ulogic :F= (PP14st0 & FT5J0 & FS31);
+    DT5J0...
+    DT5J0 : ?? :D= @!NONE!(DS31, DP141, @@nofo(FT5J0));
+Element T6F : Fork
+    FT6G1...
+    FT6G1 : std_ulogic :F= (FT6F1 & FT6F2);
+    FT6F1...
+    FT6F1 : std_ulogic :F= (FS4_cnd1 & @@swisel(S4, 2, FS40, FT9F2, FT6F1) & FT6G1 & FT6F2);
+    FT6F2...
+    FT6F2 : std_ulogic :F= (!PP16st0 & FT6G1 & FT6F1);
+    DT6F1...
+    DT6F1 : ?? :D= DT6G1;
+    DT6F2...
+    DT6F2 : ?? :D= DT6G1;
+Element T6G : Gate
+    FP151...
+    FP151 : std_ulogic :F= (PP15st0 & FT6G1);
+    FT6G1...
+    FT6G1 : std_ulogic :F= (FT6F1 & FT6F2 & FP151 & S_QAck);
+    DT6G1...
+    DT6G1 : ?? :D= DP151;
+Element T7G : Gate
+    FP161...
+    FP161 : std_ulogic :F= (PP16st0 & FT7G1);
+    FT7G1...
+    FT7G1 : std_ulogic :F= (!PP29st0 & FP161 & !S_QAck);
+    DT7G1...
+    DT7G1 : ?? :D= DP161;
+Extra attributes:
+    N_ow_IAck_0 : None := FT10F1;
+Extra attributes:
+    N_ow_ShiftEnable_1 : None := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+Extra attributes:
+    N_ow_LinkOut_2 : None := (FP2S_C01 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)) | FT8G1 | FT5J0);
+Extra attributes:
+    N_ow_QValid_3 : None := PP14st0;
+Compiler 2 starting.
+Stage 3:
+    i-bounds: , P1.1
+    o-bounds: , P2.0
+    intra: , T1.1, P1.1, P2.0, T1.0
+Stage 55:
+    i-bounds: , P2S_C1.1
+    o-bounds: , P2S_C2.0
+    intra: , P2S_C1.1, P2S_C2.0
+Stage 13:
+    i-bounds: , P2S_C9.1, P15.1
+    o-bounds: , P17.0, P16.0, P28.0
+    intra: , P16.0, P17.0, T9F.2, T6F.2, P15.1, T6G.1, T9F.0, S4.1, P28.0, T6F.0, P2S_C9.1, T6F.1, T9F.1, S4.2, S4.0, T6G.0
+Stage 59:
+    i-bounds: , P2S_C3.1
+    o-bounds: , P2S_C4.0
+    intra: , P2S_C4.0, P2S_C3.1
+Stage 83:
+    i-bounds: , S2P_C5.1
+    o-bounds: , S2P_C6.0
+    intra: , S2P_C6.0, S2P_C5.1
+Stage 73:
+    i-bounds: , S2P_C0.1
+    o-bounds: , S2P_C1.0
+    intra: , S2P_C0.1, S2P_C1.0
+Stage 63:
+    i-bounds: , P2S_C5.1
+    o-bounds: , P2S_C6.0
+    intra: , P2S_C6.0, P2S_C5.1
+Stage 53:
+    i-bounds: , P2S_C0.1
+    o-bounds: , P2S_C1.0
+    intra: , P2S_C1.0, P2S_C0.1
+Stage 7:
+    i-bounds: , P11.1
+    o-bounds: , P12.0
+    intra: , T11.0, P11.1, P12.0, T11.1
+Stage 77:
+    i-bounds: , S2P_C2.1
+    o-bounds: , S2P_C3.0
+    intra: , S2P_C3.0, S2P_C2.1
+Stage 67:
+    i-bounds: , P2S_C7.1
+    o-bounds: , P2S_C8.0
+    intra: , P2S_C8.0, P2S_C7.1
+Stage 57:
+    i-bounds: , P2S_C2.1
+    o-bounds: , P2S_C3.0
+    intra: , P2S_C3.0, P2S_C2.1
+Stage 61:
+    i-bounds: , P2S_C4.1
+    o-bounds: , P2S_C5.0
+    intra: , P2S_C5.0, P2S_C4.1
+Stage 81:
+    i-bounds: , S2P_C4.1
+    o-bounds: , S2P_C5.0
+    intra: , S2P_C4.1, S2P_C5.0
+Stage 87:
+    i-bounds: , S2P_C7.1
+    o-bounds: , S2P_C8.0
+    intra: , S2P_C8.0, S2P_C7.1
+Stage 97:
+    i-bounds: , P14.1, P17.1, P12.1
+    o-bounds: , P2S_C0.0, P15.0
+    intra: , P14.1, S3.1, T8J.0, P2S_C0.0, P17.1, S3.2, T8G.0, T8J.1, T8J.2, P12.1, P15.0, T5J.1, S3.0, T5J.0, T5J.2, T8G.1
+Stage 19:
+    i-bounds: , P16.1
+    o-bounds: , P29.0
+    intra: , P16.1, T7G.1, P29.0, T7G.0
+Stage 85:
+    i-bounds: , S2P_C6.1
+    o-bounds: , S2P_C7.0
+    intra: , S2P_C7.0, S2P_C6.1
+Stage 75:
+    i-bounds: , S2P_C1.1
+    o-bounds: , S2P_C2.0
+    intra: , S2P_C2.0, S2P_C1.1
+Stage 9:
+    i-bounds: , P29.1, S2P_C8.1, P28.1, P2.1
+    o-bounds: , P11.0, P1.0, P14.0, S2P_C0.0
+    intra: , P1.0, T10F.0, T10J.0, T10F.1, P29.1, T3F.1, T3J.2, S2.0, S1.0, T3J.0, P2.1, T3F.0, T10J.2, S2P_C0.0, P14.0, S2.2, T3F.2, T10F.2, S2.1, S2P_C8.1, S1.2, T10J.1, P11.0, T3J.1, S1.1, P28.1
+Stage 79:
+    i-bounds: , S2P_C3.1
+    o-bounds: , S2P_C4.0
+    intra: , S2P_C4.0, S2P_C3.1
+Stage 69:
+    i-bounds: , P2S_C8.1
+    o-bounds: , P2S_C9.0
+    intra: , P2S_C8.1, P2S_C9.0
+Stage 65:
+    i-bounds: , P2S_C6.1
+    o-bounds: , P2S_C7.0
+    intra: , P2S_C7.0, P2S_C6.1
+Stage 3 checked to be data-flow acyclic.
+Stage 55 checked to be data-flow acyclic.
+Stage 13 checked to be data-flow acyclic.
+Stage 59 checked to be data-flow acyclic.
+Stage 83 checked to be data-flow acyclic.
+Stage 73 checked to be data-flow acyclic.
+Stage 63 checked to be data-flow acyclic.
+Stage 53 checked to be data-flow acyclic.
+Stage 7 checked to be data-flow acyclic.
+Stage 77 checked to be data-flow acyclic.
+Stage 67 checked to be data-flow acyclic.
+Stage 57 checked to be data-flow acyclic.
+Stage 61 checked to be data-flow acyclic.
+Stage 81 checked to be data-flow acyclic.
+Stage 87 checked to be data-flow acyclic.
+Stage 97 checked to be data-flow acyclic.
+Stage 19 checked to be data-flow acyclic.
+Stage 85 checked to be data-flow acyclic.
+Stage 75 checked to be data-flow acyclic.
+Stage 9 checked to be data-flow acyclic.
+Stage 79 checked to be data-flow acyclic.
+Stage 69 checked to be data-flow acyclic.
+Stage 65 checked to be data-flow acyclic.
+Infering types:
+    FS10 : std_ulogic := (!PP1st0 & @@swisel(S1, 0, FS10, FT10F2, FT3F1));
+    FP11 : std_ulogic := (PP1st0 & FT11);
+    DP11 : void_t := DP1st0;
+    PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+    DP1st0 : void_t := @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+    FT11 : std_ulogic := (!PP2st0 & FP11 & S_LinkIn);
+    FP21 : std_ulogic := (PP2st0 & @@swisel(S2, 0, FP21, FS21, FS22));
+    DP21 : void_t := DP2st0;
+    PP2st0 : std_ulogic := @@ff(FT11, (FP21 | !PP2st0), False);
+    DP2st0 : void_t := @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+    FT10F1 : std_ulogic := (!PP11st0 & FT10J0 & FT10F2);
+    FP111 : std_ulogic := (PP11st0 & FT111);
+    DP111 : void_t := DP11st0;
+    PP11st0 : std_ulogic := @@ff(FT10F1, (FP111 | !PP11st0), False);
+    DP11st0 : void_t := @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+    FT111 : std_ulogic := (!PP12st0 & FP111 & !S_IValid);
+    FP121 : std_ulogic := (PP12st0 & FT8J0 & FS32);
+    DP121 : void_t := DP12st0;
+    PP12st0 : std_ulogic := @@ff(FT111, (FP121 | !PP12st0), True);
+    DP12st0 : void_t := @@ff(DT111, (FP121 | !PP12st0), @@zero_const_tp());
+    FT3F2 : std_ulogic := (!PP14st0 & FT3J0 & FT3F1);
+    FP141 : std_ulogic := (PP14st0 & FT5J0 & FS31);
+    DP141 : void_t := DP14st0;
+    PP14st0 : std_ulogic := @@ff(FT3F2, (FP141 | !PP14st0), False);
+    DP14st0 : void_t := @@ff(DT3F2, (FP141 | !PP14st0), @@zero_const_tp());
+    FT5J0 : std_ulogic := (!PP15st0 & FS31 & FP141);
+    FP151 : std_ulogic := (PP15st0 & FT6G1);
+    DP151 : void_t := DP15st0;
+    PP15st0 : std_ulogic := @@ff(FT5J0, (FP151 | !PP15st0), False);
+    DP15st0 : void_t := @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+    FT6F2 : std_ulogic := (!PP16st0 & FT6G1 & FT6F1);
+    FP161 : std_ulogic := (PP16st0 & FT7G1);
+    DP161 : void_t := DP16st0;
+    PP16st0 : std_ulogic := @@ff(FT6F2, (FP161 | !PP16st0), False);
+    DP16st0 : void_t := @@ff(DT6F2, (FP161 | !PP16st0), @@zero_const_tp());
+    FS40 : std_ulogic := (!PP17st0 & @@swisel(S4, 0, FS40, FT9F2, FT6F1));
+    FP171 : std_ulogic := (PP17st0 & @@swisel(S3, 0, FP171, FS31, FS32));
+    DP171 : void_t := DP17st0;
+    PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+    DP17st0 : void_t := @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+    FT9F1 : std_ulogic := (!PP28st0 & FP2S_C91 & FT9F2);
+    FP281 : std_ulogic := (PP28st0 & FT10J0 & FS21);
+    DP281 : void_t := DP28st0;
+    PP28st0 : std_ulogic := @@ff(FT9F1, (FP281 | !PP28st0), False);
+    DP28st0 : void_t := @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+    FT7G1 : std_ulogic := (!PP29st0 & FP161 & !S_QAck);
+    FP291 : std_ulogic := (PP29st0 & FT3J0 & FS2P_C81);
+    DP291 : void_t := DP29st0;
+    PP29st0 : std_ulogic := @@ff(FT7G1, (FP291 | !PP29st0), True);
+    DP29st0 : void_t := @@ff(DT7G1, (FP291 | !PP29st0), @@zero_const_tp());
+    DT11 : void_t := DP11;
+    FS1_cnd0 : std_ulogic := FT10F2;
+    FS1_cnd1 : std_ulogic := FT3F1;
+    FT10F2 : std_ulogic := (FS1_cnd0 & @@swisel(S1, 1, FS10, FT10F2, FT3F1) & FT10J0 & FT10F1);
+    FT3F1 : std_ulogic := (FS1_cnd1 & @@swisel(S1, 2, FS10, FT10F2, FT3F1) & FT3J0 & FT3F2);
+    DS10 : ?? := (FS1_cnd0 ? (DT10F2 : DT3F1));
+    FS2_cnd0 : std_ulogic := !S_LinkIn;
+    FS2_cnd1 : std_ulogic := S_LinkIn;
+    FS21 : std_ulogic := (FS2_cnd0 & @@swisel(S2, 1, FP21, FS21, FS22) & FT10J0 & FP281);
+    FS22 : std_ulogic := (FS2_cnd1 & @@swisel(S2, 2, FP21, FS21, FS22) & !PS2P_C0st0);
+    DS21 : void_t := DP21;
+    DS22 : void_t := DP21;
+    FT10J0 : std_ulogic := (FP281 & FS21 & FT10F1 & FT10F2);
+    DT10J0 : ?? := @!NONE!(DP281, DS21, @@nofo(FT10J0));
+    DT10F1 : ?? := DT10J0;
+    DT10F2 : ?? := DT10J0;
+    DT111 : void_t := DP111;
+    FT8J0 : std_ulogic := (FP121 & FS32 & FT8G1);
+    FS32 : std_ulogic := (FT8J0 & FP121 & FS3_cnd1 & @@swisel(S3, 2, FP171, FS31, FS32));
+    DT8J0 : ?? := @!NONE!(DP121, DS32, @@nofo(FT8J0));
+    FT8G1 : std_ulogic := (FT8J0 & S_IValid & !PP2S_C0st0);
+    DT8G1 : ?? := DT8J0;
+    FS3_cnd0 : std_ulogic := FS31;
+    FS3_cnd1 : std_ulogic := FS32;
+    FS31 : std_ulogic := (FS3_cnd0 & @@swisel(S3, 1, FP171, FS31, FS32) & FT5J0 & FP141);
+    DS31 : void_t := DP171;
+    DS32 : void_t := DP171;
+    FS4_cnd0 : std_ulogic := FT9F2;
+    FS4_cnd1 : std_ulogic := FT6F1;
+    FT9F2 : std_ulogic := (FS4_cnd0 & @@swisel(S4, 1, FS40, FT9F2, FT6F1) & FP2S_C91 & FT9F1);
+    FT6F1 : std_ulogic := (FS4_cnd1 & @@swisel(S4, 2, FS40, FT9F2, FT6F1) & FT6G1 & FT6F2);
+    DS40 : void_t := (FS4_cnd0 ? (DT9F2 : DT6F1));
+    FP2S_C91 : std_ulogic := (FT9F1 & FT9F2 & PP2S_C9st0);
+    DT9F1 : void_t := DP2S_C91;
+    DT9F2 : void_t := DP2S_C91;
+    FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+    DP2S_C01 : void_t := DP2S_C0st0;
+    PP2S_C0st0 : std_ulogic := @@ff(FT8G1, (FP2S_C01 | !PP2S_C0st0), False);
+    DP2S_C0st0 : void_t := @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+    FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+    DP2S_C11 : void_t := DP2S_C1st0;
+    PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+    DP2S_C1st0 : void_t := @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+    FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+    DP2S_C21 : void_t := DP2S_C2st0;
+    PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+    DP2S_C2st0 : void_t := @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+    FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+    DP2S_C31 : void_t := DP2S_C3st0;
+    PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+    DP2S_C3st0 : void_t := @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+    FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+    DP2S_C41 : void_t := DP2S_C4st0;
+    PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+    DP2S_C4st0 : void_t := @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+    FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+    DP2S_C51 : void_t := DP2S_C5st0;
+    PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+    DP2S_C5st0 : void_t := @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+    FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+    DP2S_C61 : void_t := DP2S_C6st0;
+    PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+    DP2S_C6st0 : void_t := @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+    FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+    DP2S_C71 : void_t := DP2S_C7st0;
+    PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+    DP2S_C7st0 : void_t := @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+    FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+    DP2S_C81 : void_t := DP2S_C8st0;
+    PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+    DP2S_C8st0 : void_t := @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+    DP2S_C91 : void_t := DP2S_C9st0;
+    PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FP2S_C91 | !PP2S_C9st0), False);
+    DP2S_C9st0 : void_t := @@ff(DP2S_C81, (FP2S_C91 | !PP2S_C9st0), @@zero_const_tp());
+    FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+    DS2P_C01 : void_t := DS2P_C0st0;
+    PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+    DS2P_C0st0 : void_t := @@ff(DS22, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+    FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+    DS2P_C11 : void_t := DS2P_C1st0;
+    PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+    DS2P_C1st0 : void_t := @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+    FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+    DS2P_C21 : void_t := DS2P_C2st0;
+    PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+    DS2P_C2st0 : void_t := @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+    FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+    DS2P_C31 : void_t := DS2P_C3st0;
+    PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+    DS2P_C3st0 : void_t := @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+    FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+    DS2P_C41 : void_t := DS2P_C4st0;
+    PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+    DS2P_C4st0 : void_t := @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+    FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+    DS2P_C51 : void_t := DS2P_C5st0;
+    PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+    DS2P_C5st0 : void_t := @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+    FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+    DS2P_C61 : void_t := DS2P_C6st0;
+    PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+    DS2P_C6st0 : void_t := @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+    FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+    DS2P_C71 : void_t := DS2P_C7st0;
+    PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+    DS2P_C7st0 : void_t := @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+    FS2P_C81 : std_ulogic := (PS2P_C8st0 & FT3J0 & FP291);
+    DS2P_C81 : void_t := DS2P_C8st0;
+    PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+    DS2P_C8st0 : void_t := @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+    FT3J0 : std_ulogic := (FS2P_C81 & FP291 & FT3F1 & FT3F2);
+    DT3J0 : ?? := @!NONE!(DS2P_C81, DP291, @@nofo(FT3J0));
+    DT3F1 : ?? := DT3J0;
+    DT3F2 : ?? := DT3J0;
+    DT5J0 : ?? := @!NONE!(DS31, DP141, @@nofo(FT5J0));
+    FT6G1 : std_ulogic := (FT6F1 & FT6F2 & FP151 & S_QAck);
+    DT6F1 : void_t := DT6G1;
+    DT6F2 : void_t := DT6G1;
+    DT6G1 : void_t := DP151;
+    DT7G1 : void_t := DP161;
+    N_ow_IAck_0 : std_ulogic := FT10F1;
+    N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+    N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)) | FT8G1 | FT5J0);
+    N_ow_QValid_3 : std_ulogic := PP14st0;
+Extracting undefined attribs (assuming primary inputs):
+    {S_IValid, S_IData, S_LinkIn, S_QAck}
+Merging wands in direct cycles:
+  Direct cycles:
+    "2" : {FP11, FT11}
+      merging: FP11 <- FT11
+      FP11 :F= (PP1st0 & True & !PP2st0 & True & S_LinkIn)
+    "5" : {FP281, FT10F1, FT10J0, FT10F2, FS21, FS1_cnd0}
+      merging: FP281 <- FT10F1
+      merging: FP281 <- FT10J0
+      merging: FP281 <- FT10F2
+      merging: FP281 <- FS21
+      merging: FP281 <- FS1_cnd0
+      FP281 :F= (PP28st0 & True & True & !PP11st0 & True & True & True & True & True & True & True & @@swisel(S1, 1, FS10, FP281, FT3F1) & True & True & FS2_cnd0 & @@swisel(S2, 1, FP21, FP281, FS22) & True & True & True)
+    "6" : {FP111, FT111}
+      merging: FP111 <- FT111
+      FP111 :F= (PP11st0 & True & !PP12st0 & True & !S_IValid)
+    "8" : {FS3_cnd1, FS32, FT8G1, FP121, FT8J0}
+      merging: FS3_cnd1 <- FS32
+      merging: FS3_cnd1 <- FT8G1
+      merging: FS3_cnd1 <- FP121
+      merging: FS3_cnd1 <- FT8J0
+      FS3_cnd1 :F= (True & True & True & True & @@swisel(S3, 2, FP171, FS31, FS3_cnd1) & True & S_IValid & !PP2S_C0st0 & PP12st0 & True & True & True & True & True)
+    "9" : {FS2P_C81, FT3F2, FS1_cnd1, FT3F1, FT3J0, FP291}
+      merging: FS2P_C81 <- FT3F2
+      merging: FS2P_C81 <- FS1_cnd1
+      merging: FS2P_C81 <- FT3F1
+      merging: FS2P_C81 <- FT3J0
+      merging: FS2P_C81 <- FP291
+      FS2P_C81 :F= (PS2P_C8st0 & True & True & !PP14st0 & True & True & True & True & @@swisel(S1, 2, FS10, FP281, FS2P_C81) & True & True & True & True & True & True & PP29st0 & True & True)
+    "10" : {FS3_cnd0, FS31, FP141, FT5J0}
+      merging: FS3_cnd0 <- FS31
+      merging: FS3_cnd0 <- FP141
+      merging: FS3_cnd0 <- FT5J0
+      FS3_cnd0 :F= (True & True & @@swisel(S3, 1, FP171, FS3_cnd0, FS3_cnd1) & True & True & PP14st0 & True & True & !PP15st0 & True & True)
+    "12" : {FP151, FT6F2, FS4_cnd1, FT6G1, FT6F1}
+      merging: FP151 <- FT6F2
+      merging: FP151 <- FS4_cnd1
+      merging: FP151 <- FT6G1
+      merging: FP151 <- FT6F1
+      FP151 :F= (PP15st0 & True & !PP16st0 & True & True & True & True & True & True & S_QAck & True & @@swisel(S4, 2, FS40, FT9F2, FP151) & True & True)
+    "14" : {FP161, FT7G1}
+      merging: FP161 <- FT7G1
+      FP161 :F= (PP16st0 & True & !PP29st0 & True & !S_QAck)
+    "17" : {FT9F2, FT9F1, FS4_cnd0, FP2S_C91}
+      merging: FT9F2 <- FT9F1
+      merging: FT9F2 <- FS4_cnd0
+      merging: FT9F2 <- FP2S_C91
+      FT9F2 :F= (True & @@swisel(S4, 1, FS40, FT9F2, FP151) & True & True & !PP28st0 & True & True & True & True & True & PP2S_C9st0)
+-*-*- /1/ 0.01 sec: "elim_direct_cycles" -*-*-
+  9 wands merged.
+All equations (all):
+    FS10 : std_ulogic := (!PP1st0 & @@swisel(S1, 0, FS10, FP281, FS2P_C81));
+    FP11 : std_ulogic := (PP1st0 & True & !PP2st0 & True & S_LinkIn);
+    DP11 : void_t := DP1st0;
+    PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+    DP1st0 : void_t := @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+    FP21 : std_ulogic := (PP2st0 & @@swisel(S2, 0, FP21, FP281, FS22));
+    DP21 : void_t := DP2st0;
+    PP2st0 : std_ulogic := @@ff(FP11, (FP21 | !PP2st0), False);
+    DP2st0 : void_t := @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+    FP111 : std_ulogic := (PP11st0 & True & !PP12st0 & True & !S_IValid);
+    DP111 : void_t := DP11st0;
+    PP11st0 : std_ulogic := @@ff(FP281, (FP111 | !PP11st0), False);
+    DP11st0 : void_t := @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+    DP121 : void_t := DP12st0;
+    PP12st0 : std_ulogic := @@ff(FP111, (FS3_cnd1 | !PP12st0), True);
+    DP12st0 : void_t := @@ff(DT111, (FS3_cnd1 | !PP12st0), @@zero_const_tp());
+    DP141 : void_t := DP14st0;
+    PP14st0 : std_ulogic := @@ff(FS2P_C81, (FS3_cnd0 | !PP14st0), False);
+    DP14st0 : void_t := @@ff(DT3F2, (FS3_cnd0 | !PP14st0), @@zero_const_tp());
+    FP151 : std_ulogic := (PP15st0 & True & !PP16st0 & True & True & True & True & True & True & S_QAck & True & @@swisel(S4, 2, FS40, FT9F2, FP151) & True & True);
+    DP151 : void_t := DP15st0;
+    PP15st0 : std_ulogic := @@ff(FS3_cnd0, (FP151 | !PP15st0), False);
+    DP15st0 : void_t := @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+    FP161 : std_ulogic := (PP16st0 & True & !PP29st0 & True & !S_QAck);
+    DP161 : void_t := DP16st0;
+    PP16st0 : std_ulogic := @@ff(FP151, (FP161 | !PP16st0), False);
+    DP16st0 : void_t := @@ff(DT6F2, (FP161 | !PP16st0), @@zero_const_tp());
+    FS40 : std_ulogic := (!PP17st0 & @@swisel(S4, 0, FS40, FT9F2, FP151));
+    FP171 : std_ulogic := (PP17st0 & @@swisel(S3, 0, FP171, FS3_cnd0, FS3_cnd1));
+    DP171 : void_t := DP17st0;
+    PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+    DP17st0 : void_t := @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+    FP281 : std_ulogic := (PP28st0 & True & True & !PP11st0 & True & True & True & True & True & True & True & @@swisel(S1, 1, FS10, FP281, FS2P_C81) & True & True & FS2_cnd0 & @@swisel(S2, 1, FP21, FP281, FS22) & True & True & True);
+    DP281 : void_t := DP28st0;
+    PP28st0 : std_ulogic := @@ff(FT9F2, (FP281 | !PP28st0), False);
+    DP28st0 : void_t := @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+    DP291 : void_t := DP29st0;
+    PP29st0 : std_ulogic := @@ff(FP161, (FS2P_C81 | !PP29st0), True);
+    DP29st0 : void_t := @@ff(DT7G1, (FS2P_C81 | !PP29st0), @@zero_const_tp());
+    DT11 : void_t := DP11;
+    DS10 : ?? := (FP281 ? (DT10F2 : DT3F1));
+    FS2_cnd0 : std_ulogic := !S_LinkIn;
+    FS2_cnd1 : std_ulogic := S_LinkIn;
+    FS22 : std_ulogic := (FS2_cnd1 & @@swisel(S2, 2, FP21, FP281, FS22) & !PS2P_C0st0);
+    DS21 : void_t := DP21;
+    DS22 : void_t := DP21;
+    DT10J0 : ?? := @!NONE!(DP281, DS21, @@nofo(FP281));
+    DT10F1 : ?? := DT10J0;
+    DT10F2 : ?? := DT10J0;
+    DT111 : void_t := DP111;
+    DT8J0 : ?? := @!NONE!(DP121, DS32, @@nofo(FS3_cnd1));
+    DT8G1 : ?? := DT8J0;
+    FS3_cnd0 : std_ulogic := (True & True & @@swisel(S3, 1, FP171, FS3_cnd0, FS3_cnd1) & True & True & PP14st0 & True & True & !PP15st0 & True & True);
+    FS3_cnd1 : std_ulogic := (True & True & True & True & @@swisel(S3, 2, FP171, FS3_cnd0, FS3_cnd1) & True & S_IValid & !PP2S_C0st0 & PP12st0 & True & True & True & True & True);
+    DS31 : void_t := DP171;
+    DS32 : void_t := DP171;
+    FT9F2 : std_ulogic := (True & @@swisel(S4, 1, FS40, FT9F2, FP151) & True & True & !PP28st0 & True & True & True & True & True & PP2S_C9st0);
+    DS40 : void_t := (FT9F2 ? (DT9F2 : DT6F1));
+    DT9F1 : void_t := DP2S_C91;
+    DT9F2 : void_t := DP2S_C91;
+    FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+    DP2S_C01 : void_t := DP2S_C0st0;
+    PP2S_C0st0 : std_ulogic := @@ff(FS3_cnd1, (FP2S_C01 | !PP2S_C0st0), False);
+    DP2S_C0st0 : void_t := @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+    FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+    DP2S_C11 : void_t := DP2S_C1st0;
+    PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+    DP2S_C1st0 : void_t := @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+    FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+    DP2S_C21 : void_t := DP2S_C2st0;
+    PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+    DP2S_C2st0 : void_t := @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+    FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+    DP2S_C31 : void_t := DP2S_C3st0;
+    PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+    DP2S_C3st0 : void_t := @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+    FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+    DP2S_C41 : void_t := DP2S_C4st0;
+    PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+    DP2S_C4st0 : void_t := @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+    FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+    DP2S_C51 : void_t := DP2S_C5st0;
+    PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+    DP2S_C5st0 : void_t := @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+    FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+    DP2S_C61 : void_t := DP2S_C6st0;
+    PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+    DP2S_C6st0 : void_t := @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+    FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+    DP2S_C71 : void_t := DP2S_C7st0;
+    PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+    DP2S_C7st0 : void_t := @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+    FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+    DP2S_C81 : void_t := DP2S_C8st0;
+    PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+    DP2S_C8st0 : void_t := @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+    DP2S_C91 : void_t := DP2S_C9st0;
+    PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FT9F2 | !PP2S_C9st0), False);
+    DP2S_C9st0 : void_t := @@ff(DP2S_C81, (FT9F2 | !PP2S_C9st0), @@zero_const_tp());
+    FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+    DS2P_C01 : void_t := DS2P_C0st0;
+    PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+    DS2P_C0st0 : void_t := @@ff(DS22, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+    FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+    DS2P_C11 : void_t := DS2P_C1st0;
+    PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+    DS2P_C1st0 : void_t := @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+    FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+    DS2P_C21 : void_t := DS2P_C2st0;
+    PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+    DS2P_C2st0 : void_t := @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+    FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+    DS2P_C31 : void_t := DS2P_C3st0;
+    PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+    DS2P_C3st0 : void_t := @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+    FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+    DS2P_C41 : void_t := DS2P_C4st0;
+    PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+    DS2P_C4st0 : void_t := @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+    FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+    DS2P_C51 : void_t := DS2P_C5st0;
+    PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+    DS2P_C5st0 : void_t := @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+    FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+    DS2P_C61 : void_t := DS2P_C6st0;
+    PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+    DS2P_C6st0 : void_t := @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+    FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+    DS2P_C71 : void_t := DS2P_C7st0;
+    PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+    DS2P_C7st0 : void_t := @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+    FS2P_C81 : std_ulogic := (PS2P_C8st0 & True & True & !PP14st0 & True & True & True & True & @@swisel(S1, 2, FS10, FP281, FS2P_C81) & True & True & True & True & True & True & PP29st0 & True & True);
+    DS2P_C81 : void_t := DS2P_C8st0;
+    PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+    DS2P_C8st0 : void_t := @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+    DT3J0 : ?? := @!NONE!(DS2P_C81, DP291, @@nofo(FS2P_C81));
+    DT3F1 : ?? := DT3J0;
+    DT3F2 : ?? := DT3J0;
+    DT5J0 : ?? := @!NONE!(DS31, DP141, @@nofo(FS3_cnd0));
+    DT6F1 : void_t := DT6G1;
+    DT6F2 : void_t := DT6G1;
+    DT6G1 : void_t := DP151;
+    DT7G1 : void_t := DP161;
+  * N_ow_IAck_0 : std_ulogic := FP281;
+  * N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+  * N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)) | FS3_cnd1 | FS3_cnd0);
+  * N_ow_QValid_3 : std_ulogic := PP14st0;
+Shall expand 4 swisels:
+    FS10 has swisel prfs at positions [1]
+    FP21 has swisel prfs at positions [1]
+    FP151 has swisel prfs at positions [11]
+    FS40 has swisel prfs at positions [1]
+    FP171 has swisel prfs at positions [1]
+    FP281 has swisel prfs at positions [11, 15]
+    FS22 has swisel prfs at positions [1]
+    FS3_cnd0 has swisel prfs at positions [2]
+    FS3_cnd1 has swisel prfs at positions [4]
+    FT9F2 has swisel prfs at positions [1]
+    FS2P_C81 has swisel prfs at positions [8]
+  replacement dict: {(S3, FS3_cnd1): N_FS3_cnd1_SSR_32, (S1, FP281): N_FP281_SSR_21, (S4, FT9F2): N_FT9F2_SSR_35, (S3, FP171): N_FP171_SSR_18, (S1, FS10): N_FS10_SSR_6, (S2, FP21): N_FP21_SSR_9, (S4, FS40): N_FS40_SSR_15, (S4, FP151): N_FP151_SSR_12, (S2, FP281): N_FP281_SSR_23, (S3, FS3_cnd0): N_FS3_cnd0_SSR_29, (S2, FS22): N_FS22_SSR_26, (S1, FS2P_C81): N_FS2P_C81_SSR_38}
+  replacing in FS10
+  replacing in FP11
+  replacing in FP21
+  replacing in FP111
+  replacing in FP151
+  replacing in FP161
+  replacing in FS40
+  replacing in FP171
+  replacing in FP281
+  replacing in FS2_cnd0
+  replacing in FS2_cnd1
+  replacing in FS22
+  replacing in FS3_cnd0
+  replacing in FS3_cnd1
+  replacing in FT9F2
+  replacing in FP2S_C01
+  replacing in FP2S_C11
+  replacing in FP2S_C21
+  replacing in FP2S_C31
+  replacing in FP2S_C41
+  replacing in FP2S_C51
+  replacing in FP2S_C61
+  replacing in FP2S_C71
+  replacing in FP2S_C81
+  replacing in FS2P_C01
+  replacing in FS2P_C11
+  replacing in FS2P_C21
+  replacing in FS2P_C31
+  replacing in FS2P_C41
+  replacing in FS2P_C51
+  replacing in FS2P_C61
+  replacing in FS2P_C71
+  replacing in FS2P_C81
+  replacing in N_FS10_4
+  replacing in N_FS10_SSW_5
+    ReplaceSwiSelRefsTrav: choice elm S1: FS10 -> N_FS10_SSR_6
+    ReplaceSwiSelRefsTrav: choice elm S1: FP281 -> N_FP281_SSR_21
+    ReplaceSwiSelRefsTrav: choice elm S1: FS2P_C81 -> N_FS2P_C81_SSR_38
+  replacing in N_FS10_SSR_6
+  replacing in N_FP21_7
+  replacing in N_FP21_SSW_8
+    ReplaceSwiSelRefsTrav: choice elm S2: FP21 -> N_FP21_SSR_9
+    ReplaceSwiSelRefsTrav: choice elm S2: FP281 -> N_FP281_SSR_23
+    ReplaceSwiSelRefsTrav: choice elm S2: FS22 -> N_FS22_SSR_26
+  replacing in N_FP21_SSR_9
+  replacing in N_FP151_10
+  replacing in N_FP151_SSW_11
+    ReplaceSwiSelRefsTrav: choice elm S4: FS40 -> N_FS40_SSR_15
+    ReplaceSwiSelRefsTrav: choice elm S4: FT9F2 -> N_FT9F2_SSR_35
+    ReplaceSwiSelRefsTrav: choice elm S4: FP151 -> N_FP151_SSR_12
+  replacing in N_FP151_SSR_12
+  replacing in N_FS40_13
+  replacing in N_FS40_SSW_14
+    ReplaceSwiSelRefsTrav: choice elm S4: FS40 -> N_FS40_SSR_15
+    ReplaceSwiSelRefsTrav: choice elm S4: FT9F2 -> N_FT9F2_SSR_35
+    ReplaceSwiSelRefsTrav: choice elm S4: FP151 -> N_FP151_SSR_12
+  replacing in N_FS40_SSR_15
+  replacing in N_FP171_16
+  replacing in N_FP171_SSW_17
+    ReplaceSwiSelRefsTrav: choice elm S3: FP171 -> N_FP171_SSR_18
+    ReplaceSwiSelRefsTrav: choice elm S3: FS3_cnd0 -> N_FS3_cnd0_SSR_29
+    ReplaceSwiSelRefsTrav: choice elm S3: FS3_cnd1 -> N_FS3_cnd1_SSR_32
+  replacing in N_FP171_SSR_18
+  replacing in N_FP281_19
+  replacing in N_FP281_SSW_20
+    ReplaceSwiSelRefsTrav: choice elm S1: FS10 -> N_FS10_SSR_6
+    ReplaceSwiSelRefsTrav: choice elm S1: FP281 -> N_FP281_SSR_21
+    ReplaceSwiSelRefsTrav: choice elm S1: FS2P_C81 -> N_FS2P_C81_SSR_38
+  replacing in N_FP281_SSR_21
+  replacing in N_FP281_SSW_22
+    ReplaceSwiSelRefsTrav: choice elm S2: FP21 -> N_FP21_SSR_9
+    ReplaceSwiSelRefsTrav: choice elm S2: FP281 -> N_FP281_SSR_23
+    ReplaceSwiSelRefsTrav: choice elm S2: FS22 -> N_FS22_SSR_26
+  replacing in N_FP281_SSR_23
+  replacing in N_FS22_24
+  replacing in N_FS22_SSW_25
+    ReplaceSwiSelRefsTrav: choice elm S2: FP21 -> N_FP21_SSR_9
+    ReplaceSwiSelRefsTrav: choice elm S2: FP281 -> N_FP281_SSR_23
+    ReplaceSwiSelRefsTrav: choice elm S2: FS22 -> N_FS22_SSR_26
+  replacing in N_FS22_SSR_26
+  replacing in N_FS3_cnd0_27
+  replacing in N_FS3_cnd0_SSW_28
+    ReplaceSwiSelRefsTrav: choice elm S3: FP171 -> N_FP171_SSR_18
+    ReplaceSwiSelRefsTrav: choice elm S3: FS3_cnd0 -> N_FS3_cnd0_SSR_29
+    ReplaceSwiSelRefsTrav: choice elm S3: FS3_cnd1 -> N_FS3_cnd1_SSR_32
+  replacing in N_FS3_cnd0_SSR_29
+  replacing in N_FS3_cnd1_30
+  replacing in N_FS3_cnd1_SSW_31
+    ReplaceSwiSelRefsTrav: choice elm S3: FP171 -> N_FP171_SSR_18
+    ReplaceSwiSelRefsTrav: choice elm S3: FS3_cnd0 -> N_FS3_cnd0_SSR_29
+    ReplaceSwiSelRefsTrav: choice elm S3: FS3_cnd1 -> N_FS3_cnd1_SSR_32
+  replacing in N_FS3_cnd1_SSR_32
+  replacing in N_FT9F2_33
+  replacing in N_FT9F2_SSW_34
+    ReplaceSwiSelRefsTrav: choice elm S4: FS40 -> N_FS40_SSR_15
+    ReplaceSwiSelRefsTrav: choice elm S4: FT9F2 -> N_FT9F2_SSR_35
+    ReplaceSwiSelRefsTrav: choice elm S4: FP151 -> N_FP151_SSR_12
+  replacing in N_FT9F2_SSR_35
+  replacing in N_FS2P_C81_36
+  replacing in N_FS2P_C81_SSW_37
+    ReplaceSwiSelRefsTrav: choice elm S1: FS10 -> N_FS10_SSR_6
+    ReplaceSwiSelRefsTrav: choice elm S1: FP281 -> N_FP281_SSR_21
+    ReplaceSwiSelRefsTrav: choice elm S1: FS2P_C81 -> N_FS2P_C81_SSR_38
+  replacing in N_FS2P_C81_SSR_38
+All equations (all):
+    FS10 : std_ulogic := (N_FS10_4 & N_FS10_SSW_5);
+    FP11 : std_ulogic := (PP1st0 & True & !PP2st0 & True & S_LinkIn);
+    DP11 : void_t := DP1st0;
+    PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+    DP1st0 : void_t := @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+    FP21 : std_ulogic := (N_FP21_7 & N_FP21_SSW_8);
+    DP21 : void_t := DP2st0;
+    PP2st0 : std_ulogic := @@ff(FP11, (FP21 | !PP2st0), False);
+    DP2st0 : void_t := @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+    FP111 : std_ulogic := (PP11st0 & True & !PP12st0 & True & !S_IValid);
+    DP111 : void_t := DP11st0;
+    PP11st0 : std_ulogic := @@ff(FP281, (FP111 | !PP11st0), False);
+    DP11st0 : void_t := @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+    DP121 : void_t := DP12st0;
+    PP12st0 : std_ulogic := @@ff(FP111, (FS3_cnd1 | !PP12st0), True);
+    DP12st0 : void_t := @@ff(DT111, (FS3_cnd1 | !PP12st0), @@zero_const_tp());
+    DP141 : void_t := DP14st0;
+    PP14st0 : std_ulogic := @@ff(FS2P_C81, (FS3_cnd0 | !PP14st0), False);
+    DP14st0 : void_t := @@ff(DT3F2, (FS3_cnd0 | !PP14st0), @@zero_const_tp());
+    FP151 : std_ulogic := (N_FP151_10 & N_FP151_SSW_11);
+    DP151 : void_t := DP15st0;
+    PP15st0 : std_ulogic := @@ff(FS3_cnd0, (FP151 | !PP15st0), False);
+    DP15st0 : void_t := @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+    FP161 : std_ulogic := (PP16st0 & True & !PP29st0 & True & !S_QAck);
+    DP161 : void_t := DP16st0;
+    PP16st0 : std_ulogic := @@ff(FP151, (FP161 | !PP16st0), False);
+    DP16st0 : void_t := @@ff(DT6F2, (FP161 | !PP16st0), @@zero_const_tp());
+    FS40 : std_ulogic := (N_FS40_13 & N_FS40_SSW_14);
+    FP171 : std_ulogic := (N_FP171_16 & N_FP171_SSW_17);
+    DP171 : void_t := DP17st0;
+    PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+    DP17st0 : void_t := @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+    FP281 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20 & N_FP281_SSW_22);
+    DP281 : void_t := DP28st0;
+    PP28st0 : std_ulogic := @@ff(FT9F2, (FP281 | !PP28st0), False);
+    DP28st0 : void_t := @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+    DP291 : void_t := DP29st0;
+    PP29st0 : std_ulogic := @@ff(FP161, (FS2P_C81 | !PP29st0), True);
+    DP29st0 : void_t := @@ff(DT7G1, (FS2P_C81 | !PP29st0), @@zero_const_tp());
+    DT11 : void_t := DP11;
+    DS10 : ?? := (FP281 ? (DT10F2 : DT3F1));
+    FS2_cnd0 : std_ulogic := !S_LinkIn;
+    FS2_cnd1 : std_ulogic := S_LinkIn;
+    FS22 : std_ulogic := (N_FS22_24 & N_FS22_SSW_25);
+    DS21 : void_t := DP21;
+    DS22 : void_t := DP21;
+    DT10J0 : ?? := @!NONE!(DP281, DS21, @@nofo(FP281));
+    DT10F1 : ?? := DT10J0;
+    DT10F2 : ?? := DT10J0;
+    DT111 : void_t := DP111;
+    DT8J0 : ?? := @!NONE!(DP121, DS32, @@nofo(FS3_cnd1));
+    DT8G1 : ?? := DT8J0;
+    FS3_cnd0 : std_ulogic := (N_FS3_cnd0_27 & N_FS3_cnd0_SSW_28);
+    FS3_cnd1 : std_ulogic := (N_FS3_cnd1_30 & N_FS3_cnd1_SSW_31);
+    DS31 : void_t := DP171;
+    DS32 : void_t := DP171;
+    FT9F2 : std_ulogic := (N_FT9F2_33 & N_FT9F2_SSW_34);
+    DS40 : void_t := (FT9F2 ? (DT9F2 : DT6F1));
+    DT9F1 : void_t := DP2S_C91;
+    DT9F2 : void_t := DP2S_C91;
+    FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+    DP2S_C01 : void_t := DP2S_C0st0;
+    PP2S_C0st0 : std_ulogic := @@ff(FS3_cnd1, (FP2S_C01 | !PP2S_C0st0), False);
+    DP2S_C0st0 : void_t := @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+    FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+    DP2S_C11 : void_t := DP2S_C1st0;
+    PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+    DP2S_C1st0 : void_t := @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+    FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+    DP2S_C21 : void_t := DP2S_C2st0;
+    PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+    DP2S_C2st0 : void_t := @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+    FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+    DP2S_C31 : void_t := DP2S_C3st0;
+    PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+    DP2S_C3st0 : void_t := @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+    FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+    DP2S_C41 : void_t := DP2S_C4st0;
+    PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+    DP2S_C4st0 : void_t := @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+    FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+    DP2S_C51 : void_t := DP2S_C5st0;
+    PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+    DP2S_C5st0 : void_t := @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+    FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+    DP2S_C61 : void_t := DP2S_C6st0;
+    PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+    DP2S_C6st0 : void_t := @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+    FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+    DP2S_C71 : void_t := DP2S_C7st0;
+    PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+    DP2S_C7st0 : void_t := @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+    FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+    DP2S_C81 : void_t := DP2S_C8st0;
+    PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+    DP2S_C8st0 : void_t := @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+    DP2S_C91 : void_t := DP2S_C9st0;
+    PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FT9F2 | !PP2S_C9st0), False);
+    DP2S_C9st0 : void_t := @@ff(DP2S_C81, (FT9F2 | !PP2S_C9st0), @@zero_const_tp());
+    FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+    DS2P_C01 : void_t := DS2P_C0st0;
+    PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+    DS2P_C0st0 : void_t := @@ff(DS22, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+    FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+    DS2P_C11 : void_t := DS2P_C1st0;
+    PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+    DS2P_C1st0 : void_t := @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+    FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+    DS2P_C21 : void_t := DS2P_C2st0;
+    PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+    DS2P_C2st0 : void_t := @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+    FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+    DS2P_C31 : void_t := DS2P_C3st0;
+    PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+    DS2P_C3st0 : void_t := @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+    FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+    DS2P_C41 : void_t := DS2P_C4st0;
+    PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+    DS2P_C4st0 : void_t := @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+    FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+    DS2P_C51 : void_t := DS2P_C5st0;
+    PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+    DS2P_C5st0 : void_t := @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+    FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+    DS2P_C61 : void_t := DS2P_C6st0;
+    PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+    DS2P_C6st0 : void_t := @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+    FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+    DS2P_C71 : void_t := DS2P_C7st0;
+    PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+    DS2P_C7st0 : void_t := @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+    FS2P_C81 : std_ulogic := (N_FS2P_C81_36 & N_FS2P_C81_SSW_37);
+    DS2P_C81 : void_t := DS2P_C8st0;
+    PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+    DS2P_C8st0 : void_t := @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+    DT3J0 : ?? := @!NONE!(DS2P_C81, DP291, @@nofo(FS2P_C81));
+    DT3F1 : ?? := DT3J0;
+    DT3F2 : ?? := DT3J0;
+    DT5J0 : ?? := @!NONE!(DS31, DP141, @@nofo(FS3_cnd0));
+    DT6F1 : void_t := DT6G1;
+    DT6F2 : void_t := DT6G1;
+    DT6G1 : void_t := DP151;
+    DT7G1 : void_t := DP161;
+  * N_ow_IAck_0 : std_ulogic := FP281;
+  * N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+  * N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)) | FS3_cnd1 | FS3_cnd0);
+  * N_ow_QValid_3 : std_ulogic := PP14st0;
+    N_FS10_4 : std_ulogic := (!PP1st0 & True);
+    N_FS10_SSW_5 : std_ulogic := @@swisel(S1, 0, N_FS10_SSR_6, N_FP281_SSR_21, N_FS2P_C81_SSR_38);
+    N_FS10_SSR_6 : std_ulogic := (N_FS10_4);
+    N_FP21_7 : std_ulogic := (PP2st0 & True);
+    N_FP21_SSW_8 : std_ulogic := @@swisel(S2, 0, N_FP21_SSR_9, N_FP281_SSR_23, N_FS22_SSR_26);
+    N_FP21_SSR_9 : std_ulogic := (N_FP21_7);
+    N_FP151_10 : std_ulogic := (PP15st0 & True & !PP16st0 & True & True & True & True & True & True & S_QAck & True & True & True & True);
+    N_FP151_SSW_11 : std_ulogic := @@swisel(S4, 2, N_FS40_SSR_15, N_FT9F2_SSR_35, N_FP151_SSR_12);
+    N_FP151_SSR_12 : std_ulogic := (N_FP151_10);
+    N_FS40_13 : std_ulogic := (!PP17st0 & True);
+    N_FS40_SSW_14 : std_ulogic := @@swisel(S4, 0, N_FS40_SSR_15, N_FT9F2_SSR_35, N_FP151_SSR_12);
+    N_FS40_SSR_15 : std_ulogic := (N_FS40_13);
+    N_FP171_16 : std_ulogic := (PP17st0 & True);
+    N_FP171_SSW_17 : std_ulogic := @@swisel(S3, 0, N_FP171_SSR_18, N_FS3_cnd0_SSR_29, N_FS3_cnd1_SSR_32);
+    N_FP171_SSR_18 : std_ulogic := (N_FP171_16);
+    N_FP281_19 : std_ulogic := (PP28st0 & True & True & !PP11st0 & True & True & True & True & True & True & True & True & True & True & FS2_cnd0 & True & True & True & True);
+    N_FP281_SSW_20 : std_ulogic := @@swisel(S1, 1, N_FS10_SSR_6, N_FP281_SSR_21, N_FS2P_C81_SSR_38);
+    N_FP281_SSR_21 : std_ulogic := (N_FP281_19 & N_FP281_SSW_22);
+    N_FP281_SSW_22 : std_ulogic := @@swisel(S2, 1, N_FP21_SSR_9, N_FP281_SSR_23, N_FS22_SSR_26);
+    N_FP281_SSR_23 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20);
+    N_FS22_24 : std_ulogic := (FS2_cnd1 & True & !PS2P_C0st0);
+    N_FS22_SSW_25 : std_ulogic := @@swisel(S2, 2, N_FP21_SSR_9, N_FP281_SSR_23, N_FS22_SSR_26);
+    N_FS22_SSR_26 : std_ulogic := (N_FS22_24);
+    N_FS3_cnd0_27 : std_ulogic := (True & True & True & True & True & PP14st0 & True & True & !PP15st0 & True & True);
+    N_FS3_cnd0_SSW_28 : std_ulogic := @@swisel(S3, 1, N_FP171_SSR_18, N_FS3_cnd0_SSR_29, N_FS3_cnd1_SSR_32);
+    N_FS3_cnd0_SSR_29 : std_ulogic := (N_FS3_cnd0_27);
+    N_FS3_cnd1_30 : std_ulogic := (True & True & True & True & True & True & S_IValid & !PP2S_C0st0 & PP12st0 & True & True & True & True & True);
+    N_FS3_cnd1_SSW_31 : std_ulogic := @@swisel(S3, 2, N_FP171_SSR_18, N_FS3_cnd0_SSR_29, N_FS3_cnd1_SSR_32);
+    N_FS3_cnd1_SSR_32 : std_ulogic := (N_FS3_cnd1_30);
+    N_FT9F2_33 : std_ulogic := (True & True & True & True & !PP28st0 & True & True & True & True & True & PP2S_C9st0);
+    N_FT9F2_SSW_34 : std_ulogic := @@swisel(S4, 1, N_FS40_SSR_15, N_FT9F2_SSR_35, N_FP151_SSR_12);
+    N_FT9F2_SSR_35 : std_ulogic := (N_FT9F2_33);
+    N_FS2P_C81_36 : std_ulogic := (PS2P_C8st0 & True & True & !PP14st0 & True & True & True & True & True & True & True & True & True & True & True & PP29st0 & True & True);
+    N_FS2P_C81_SSW_37 : std_ulogic := @@swisel(S1, 2, N_FS10_SSR_6, N_FP281_SSR_21, N_FS2P_C81_SSR_38);
+    N_FS2P_C81_SSR_38 : std_ulogic := (N_FS2P_C81_36);
+  Pattern-expading swisel S1
+    wnds_w=[N_FS10_SSW_5, N_FP281_SSW_20, N_FS2P_C81_SSW_37], wnds_r=[N_FS10_SSR_6, N_FP281_SSR_21, N_FS2P_C81_SSR_38]
+  Pattern-expading swisel S2
+    wnds_w=[N_FP21_SSW_8, N_FP281_SSW_22, N_FS22_SSW_25], wnds_r=[N_FP21_SSR_9, N_FP281_SSR_23, N_FS22_SSR_26]
+  Pattern-expading swisel S3
+    wnds_w=[N_FP171_SSW_17, N_FS3_cnd0_SSW_28, N_FS3_cnd1_SSW_31], wnds_r=[N_FP171_SSR_18, N_FS3_cnd0_SSR_29, N_FS3_cnd1_SSR_32]
+  Pattern-expading swisel S4
+    wnds_w=[N_FS40_SSW_14, N_FT9F2_SSW_34, N_FP151_SSW_11], wnds_r=[N_FS40_SSR_15, N_FT9F2_SSR_35, N_FP151_SSR_12]
+Merging wands in direct cycles:
+  Direct cycles:
+-*-*- /1/ 0.00 sec: "elim_direct_cycles" -*-*-
+  0 wands merged.
+-*-*- /1/ 0.01 sec: "compute_deps" -*-*-
+All equations (all):
+    FS10 : std_ulogic := (N_FS10_4 & N_FS10_SSW_5);
+      pred: {N_FS10_4, N_FS10_SSW_5}
+      succ: set()
+    FP11 : std_ulogic := (PP1st0 & True & !PP2st0 & True & S_LinkIn);
+      pred: {PP2st0, PP1st0, S_LinkIn}
+      succ: set()
+    DP11 : void_t := DP1st0;
+      pred: {DP1st0}
+      succ: {DT11}
+    PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+      pred: set()
+      succ: {FP11, N_FS10_4}
+    DP1st0 : void_t := @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP11}
+    FP21 : std_ulogic := (N_FP21_7 & N_FP21_SSW_8);
+      pred: {N_FP21_SSW_8, N_FP21_7}
+      succ: set()
+    DP21 : void_t := DP2st0;
+      pred: {DP2st0}
+      succ: {DS22, DS21}
+    PP2st0 : std_ulogic := @@ff(FP11, (FP21 | !PP2st0), False);
+      pred: set()
+      succ: {FP11, N_FP21_7}
+    DP2st0 : void_t := @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP21}
+    FP111 : std_ulogic := (PP11st0 & True & !PP12st0 & True & !S_IValid);
+      pred: {S_IValid, PP11st0, PP12st0}
+      succ: set()
+    DP111 : void_t := DP11st0;
+      pred: {DP11st0}
+      succ: {DT111}
+    PP11st0 : std_ulogic := @@ff(FP281, (FP111 | !PP11st0), False);
+      pred: set()
+      succ: {FP111, N_FP281_19}
+    DP11st0 : void_t := @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP111}
+    DP121 : void_t := DP12st0;
+      pred: {DP12st0}
+      succ: {DT8J0}
+    PP12st0 : std_ulogic := @@ff(FP111, (FS3_cnd1 | !PP12st0), True);
+      pred: set()
+      succ: {FP111, N_FS3_cnd1_30}
+    DP12st0 : void_t := @@ff(DT111, (FS3_cnd1 | !PP12st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP121}
+    DP141 : void_t := DP14st0;
+      pred: {DP14st0}
+      succ: {DT5J0}
+    PP14st0 : std_ulogic := @@ff(FS2P_C81, (FS3_cnd0 | !PP14st0), False);
+      pred: set()
+      succ: {N_ow_QValid_3, N_FS2P_C81_36, N_FS3_cnd0_27}
+    DP14st0 : void_t := @@ff(DT3F2, (FS3_cnd0 | !PP14st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP141}
+    FP151 : std_ulogic := (N_FP151_10 & N_FP151_SSW_11);
+      pred: {N_FP151_10, N_FP151_SSW_11}
+      succ: set()
+    DP151 : void_t := DP15st0;
+      pred: {DP15st0}
+      succ: {DT6G1}
+    PP15st0 : std_ulogic := @@ff(FS3_cnd0, (FP151 | !PP15st0), False);
+      pred: set()
+      succ: {N_FS3_cnd0_27, N_FP151_10}
+    DP15st0 : void_t := @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP151}
+    FP161 : std_ulogic := (PP16st0 & True & !PP29st0 & True & !S_QAck);
+      pred: {PP16st0, S_QAck, PP29st0}
+      succ: set()
+    DP161 : void_t := DP16st0;
+      pred: {DP16st0}
+      succ: {DT7G1}
+    PP16st0 : std_ulogic := @@ff(FP151, (FP161 | !PP16st0), False);
+      pred: set()
+      succ: {FP161, N_FP151_10}
+    DP16st0 : void_t := @@ff(DT6F2, (FP161 | !PP16st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP161}
+    FS40 : std_ulogic := (N_FS40_13 & N_FS40_SSW_14);
+      pred: {N_FS40_13, N_FS40_SSW_14}
+      succ: set()
+    FP171 : std_ulogic := (N_FP171_16 & N_FP171_SSW_17);
+      pred: {N_FP171_16, N_FP171_SSW_17}
+      succ: set()
+    DP171 : void_t := DP17st0;
+      pred: {DP17st0}
+      succ: {DS31, DS32}
+    PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+      pred: set()
+      succ: {N_FS40_13, N_FP171_16}
+    DP17st0 : void_t := @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP171}
+    FP281 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20 & N_FP281_SSW_22);
+      pred: {N_FP281_19, N_FP281_SSW_22, N_FP281_SSW_20}
+      succ: {DS10, N_ow_IAck_0}
+    DP281 : void_t := DP28st0;
+      pred: {DP28st0}
+      succ: {DT10J0}
+    PP28st0 : std_ulogic := @@ff(FT9F2, (FP281 | !PP28st0), False);
+      pred: set()
+      succ: {N_FP281_19, N_FT9F2_33}
+    DP28st0 : void_t := @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP281}
+    DP291 : void_t := DP29st0;
+      pred: {DP29st0}
+      succ: {DT3J0}
+    PP29st0 : std_ulogic := @@ff(FP161, (FS2P_C81 | !PP29st0), True);
+      pred: set()
+      succ: {FP161, N_FS2P_C81_36}
+    DP29st0 : void_t := @@ff(DT7G1, (FS2P_C81 | !PP29st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP291}
+    DT11 : void_t := DP11;
+      pred: {DP11}
+      succ: set()
+    DS10 : ?? := (FP281 ? (DT10F2 : DT3F1));
+      pred: {FP281, DT10F2, DT3F1}
+      succ: set()
+    FS2_cnd0 : std_ulogic := !S_LinkIn;
+      pred: {S_LinkIn}
+      succ: {N_FP281_19}
+    FS2_cnd1 : std_ulogic := S_LinkIn;
+      pred: {S_LinkIn}
+      succ: {N_FS22_24}
+    FS22 : std_ulogic := (N_FS22_24 & N_FS22_SSW_25);
+      pred: {N_FS22_24, N_FS22_SSW_25}
+      succ: set()
+    DS21 : void_t := DP21;
+      pred: {DP21}
+      succ: {DT10J0}
+    DS22 : void_t := DP21;
+      pred: {DP21}
+      succ: set()
+    DT10J0 : ?? := @!NONE!(DP281, DS21, @@nofo(FP281));
+      pred: {DP281, DS21}
+      succ: {DT10F1, DT10F2}
+    DT10F1 : ?? := DT10J0;
+      pred: {DT10J0}
+      succ: set()
+    DT10F2 : ?? := DT10J0;
+      pred: {DT10J0}
+      succ: {DS10}
+    DT111 : void_t := DP111;
+      pred: {DP111}
+      succ: set()
+    DT8J0 : ?? := @!NONE!(DP121, DS32, @@nofo(FS3_cnd1));
+      pred: {DP121, DS32}
+      succ: {DT8G1}
+    DT8G1 : ?? := DT8J0;
+      pred: {DT8J0}
+      succ: set()
+    FS3_cnd0 : std_ulogic := (N_FS3_cnd0_27 & N_FS3_cnd0_SSW_28);
+      pred: {N_FS3_cnd0_27, N_FS3_cnd0_SSW_28}
+      succ: {N_ow_LinkOut_2}
+    FS3_cnd1 : std_ulogic := (N_FS3_cnd1_30 & N_FS3_cnd1_SSW_31);
+      pred: {N_FS3_cnd1_30, N_FS3_cnd1_SSW_31}
+      succ: {N_ow_LinkOut_2}
+    DS31 : void_t := DP171;
+      pred: {DP171}
+      succ: {DT5J0}
+    DS32 : void_t := DP171;
+      pred: {DP171}
+      succ: {DT8J0}
+    FT9F2 : std_ulogic := (N_FT9F2_33 & N_FT9F2_SSW_34);
+      pred: {N_FT9F2_33, N_FT9F2_SSW_34}
+      succ: {DS40}
+    DS40 : void_t := (FT9F2 ? (DT9F2 : DT6F1));
+      pred: {DT9F2, FT9F2, DT6F1}
+      succ: set()
+    DT9F1 : void_t := DP2S_C91;
+      pred: {DP2S_C91}
+      succ: set()
+    DT9F2 : void_t := DP2S_C91;
+      pred: {DP2S_C91}
+      succ: {DS40}
+    FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+      pred: {PP2S_C0st0, PP2S_C1st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C01 : void_t := DP2S_C0st0;
+      pred: {DP2S_C0st0}
+      succ: set()
+    PP2S_C0st0 : std_ulogic := @@ff(FS3_cnd1, (FP2S_C01 | !PP2S_C0st0), False);
+      pred: set()
+      succ: {FP2S_C01, N_FS3_cnd1_30}
+    DP2S_C0st0 : void_t := @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C01}
+    FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+      pred: {PP2S_C1st0, PP2S_C2st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C11 : void_t := DP2S_C1st0;
+      pred: {DP2S_C1st0}
+      succ: set()
+    PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+      pred: set()
+      succ: {FP2S_C01, FP2S_C11}
+    DP2S_C1st0 : void_t := @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C11}
+    FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+      pred: {PP2S_C3st0, PP2S_C2st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C21 : void_t := DP2S_C2st0;
+      pred: {DP2S_C2st0}
+      succ: set()
+    PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+      pred: set()
+      succ: {FP2S_C21, FP2S_C11}
+    DP2S_C2st0 : void_t := @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C21}
+    FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+      pred: {PP2S_C3st0, PP2S_C4st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C31 : void_t := DP2S_C3st0;
+      pred: {DP2S_C3st0}
+      succ: set()
+    PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+      pred: set()
+      succ: {FP2S_C21, FP2S_C31}
+    DP2S_C3st0 : void_t := @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C31}
+    FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+      pred: {PP2S_C4st0, PP2S_C5st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C41 : void_t := DP2S_C4st0;
+      pred: {DP2S_C4st0}
+      succ: set()
+    PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+      pred: set()
+      succ: {FP2S_C31, FP2S_C41}
+    DP2S_C4st0 : void_t := @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C41}
+    FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+      pred: {PP2S_C5st0, PP2S_C6st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C51 : void_t := DP2S_C5st0;
+      pred: {DP2S_C5st0}
+      succ: set()
+    PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+      pred: set()
+      succ: {FP2S_C51, FP2S_C41}
+    DP2S_C5st0 : void_t := @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C51}
+    FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+      pred: {PP2S_C7st0, PP2S_C6st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C61 : void_t := DP2S_C6st0;
+      pred: {DP2S_C6st0}
+      succ: set()
+    PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+      pred: set()
+      succ: {FP2S_C51, FP2S_C61}
+    DP2S_C6st0 : void_t := @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C61}
+    FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+      pred: {PP2S_C7st0, PP2S_C8st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C71 : void_t := DP2S_C7st0;
+      pred: {DP2S_C7st0}
+      succ: set()
+    PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+      pred: set()
+      succ: {FP2S_C61, FP2S_C71}
+    DP2S_C7st0 : void_t := @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C71}
+    FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+      pred: {PP2S_C8st0, PP2S_C9st0}
+      succ: {N_ow_LinkOut_2}
+    DP2S_C81 : void_t := DP2S_C8st0;
+      pred: {DP2S_C8st0}
+      succ: set()
+    PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+      pred: set()
+      succ: {FP2S_C81, FP2S_C71}
+    DP2S_C8st0 : void_t := @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C81}
+    DP2S_C91 : void_t := DP2S_C9st0;
+      pred: {DP2S_C9st0}
+      succ: {DT9F2, DT9F1}
+    PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FT9F2 | !PP2S_C9st0), False);
+      pred: set()
+      succ: {FP2S_C81, N_FT9F2_33}
+    DP2S_C9st0 : void_t := @@ff(DP2S_C81, (FT9F2 | !PP2S_C9st0), @@zero_const_tp());
+      pred: set()
+      succ: {DP2S_C91}
+    FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+      pred: {PS2P_C0st0, PS2P_C1st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C01 : void_t := DS2P_C0st0;
+      pred: {DS2P_C0st0}
+      succ: set()
+    PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+      pred: set()
+      succ: {FS2P_C01, N_FS22_24}
+    DS2P_C0st0 : void_t := @@ff(DS22, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C01}
+    FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+      pred: {PS2P_C1st0, PS2P_C2st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C11 : void_t := DS2P_C1st0;
+      pred: {DS2P_C1st0}
+      succ: set()
+    PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+      pred: set()
+      succ: {FS2P_C01, FS2P_C11}
+    DS2P_C1st0 : void_t := @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C11}
+    FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+      pred: {PS2P_C3st0, PS2P_C2st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C21 : void_t := DS2P_C2st0;
+      pred: {DS2P_C2st0}
+      succ: set()
+    PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+      pred: set()
+      succ: {FS2P_C11, FS2P_C21}
+    DS2P_C2st0 : void_t := @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C21}
+    FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+      pred: {PS2P_C3st0, PS2P_C4st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C31 : void_t := DS2P_C3st0;
+      pred: {DS2P_C3st0}
+      succ: set()
+    PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+      pred: set()
+      succ: {FS2P_C21, FS2P_C31}
+    DS2P_C3st0 : void_t := @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C31}
+    FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+      pred: {PS2P_C4st0, PS2P_C5st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C41 : void_t := DS2P_C4st0;
+      pred: {DS2P_C4st0}
+      succ: set()
+    PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+      pred: set()
+      succ: {FS2P_C41, FS2P_C31}
+    DS2P_C4st0 : void_t := @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C41}
+    FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+      pred: {PS2P_C6st0, PS2P_C5st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C51 : void_t := DS2P_C5st0;
+      pred: {DS2P_C5st0}
+      succ: set()
+    PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+      pred: set()
+      succ: {FS2P_C41, FS2P_C51}
+    DS2P_C5st0 : void_t := @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C51}
+    FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+      pred: {PS2P_C6st0, PS2P_C7st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C61 : void_t := DS2P_C6st0;
+      pred: {DS2P_C6st0}
+      succ: set()
+    PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+      pred: set()
+      succ: {FS2P_C51, FS2P_C61}
+    DS2P_C6st0 : void_t := @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C61}
+    FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+      pred: {PS2P_C7st0, PS2P_C8st0}
+      succ: {N_ow_ShiftEnable_1}
+    DS2P_C71 : void_t := DS2P_C7st0;
+      pred: {DS2P_C7st0}
+      succ: set()
+    PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+      pred: set()
+      succ: {FS2P_C61, FS2P_C71}
+    DS2P_C7st0 : void_t := @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C71}
+    FS2P_C81 : std_ulogic := (N_FS2P_C81_36 & N_FS2P_C81_SSW_37);
+      pred: {N_FS2P_C81_SSW_37, N_FS2P_C81_36}
+      succ: set()
+    DS2P_C81 : void_t := DS2P_C8st0;
+      pred: {DS2P_C8st0}
+      succ: {DT3J0}
+    PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+      pred: set()
+      succ: {FS2P_C71, N_FS2P_C81_36}
+    DS2P_C8st0 : void_t := @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+      pred: set()
+      succ: {DS2P_C81}
+    DT3J0 : ?? := @!NONE!(DS2P_C81, DP291, @@nofo(FS2P_C81));
+      pred: {DS2P_C81, DP291}
+      succ: {DT3F1, DT3F2}
+    DT3F1 : ?? := DT3J0;
+      pred: {DT3J0}
+      succ: {DS10}
+    DT3F2 : ?? := DT3J0;
+      pred: {DT3J0}
+      succ: set()
+    DT5J0 : ?? := @!NONE!(DS31, DP141, @@nofo(FS3_cnd0));
+      pred: {DS31, DP141}
+      succ: set()
+    DT6F1 : void_t := DT6G1;
+      pred: {DT6G1}
+      succ: {DS40}
+    DT6F2 : void_t := DT6G1;
+      pred: {DT6G1}
+      succ: set()
+    DT6G1 : void_t := DP151;
+      pred: {DP151}
+      succ: {DT6F2, DT6F1}
+    DT7G1 : void_t := DP161;
+      pred: {DP161}
+      succ: set()
+  * N_ow_IAck_0 : std_ulogic := FP281;
+      pred: {FP281}
+      succ: set()
+  * N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+      pred: {FS2P_C01, FS2P_C11, FS2P_C71, FS2P_C41, FS2P_C21, FS2P_C31, FS2P_C51, FS2P_C61}
+      succ: set()
+  * N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)) | FS3_cnd1 | FS3_cnd0);
+      pred: {FP2S_C51, FP2S_C81, S_IData, FP2S_C61, FP2S_C11, FP2S_C71, FP2S_C01, FP2S_C31, FP2S_C21, FS3_cnd1, FS3_cnd0, FP2S_C41}
+      succ: set()
+  * N_ow_QValid_3 : std_ulogic := PP14st0;
+      pred: {PP14st0}
+      succ: set()
+    N_FS10_4 : std_ulogic := (!PP1st0 & True);
+      pred: {PP1st0}
+      succ: {FS10, N_FS10_SSR_6}
+    N_FS10_SSW_5 : std_ulogic := (True & (N_FP281_SSR_21 | N_FS2P_C81_SSR_38));
+      pred: {N_FS2P_C81_SSR_38, N_FP281_SSR_21}
+      succ: {FS10}
+    N_FS10_SSR_6 : std_ulogic := (N_FS10_4);
+      pred: {N_FS10_4}
+      succ: {N_FP281_SSW_20, N_FS2P_C81_SSW_37}
+    N_FP21_7 : std_ulogic := (PP2st0 & True);
+      pred: {PP2st0}
+      succ: {N_FP21_SSR_9, FP21}
+    N_FP21_SSW_8 : std_ulogic := (True & (N_FP281_SSR_23 | N_FS22_SSR_26));
+      pred: {N_FP281_SSR_23, N_FS22_SSR_26}
+      succ: {FP21}
+    N_FP21_SSR_9 : std_ulogic := (N_FP21_7);
+      pred: {N_FP21_7}
+      succ: {N_FP281_SSW_22, N_FS22_SSW_25}
+    N_FP151_10 : std_ulogic := (PP15st0 & True & !PP16st0 & True & True & True & True & True & True & S_QAck & True & True & True & True);
+      pred: {PP16st0, PP15st0, S_QAck}
+      succ: {FP151, N_FP151_SSR_12}
+    N_FP151_SSW_11 : std_ulogic := (True & N_FS40_SSR_15 & !N_FT9F2_SSR_35);
+      pred: {N_FS40_SSR_15, N_FT9F2_SSR_35}
+      succ: {FP151}
+    N_FP151_SSR_12 : std_ulogic := (N_FP151_10);
+      pred: {N_FP151_10}
+      succ: {N_FS40_SSW_14}
+    N_FS40_13 : std_ulogic := (!PP17st0 & True);
+      pred: {PP17st0}
+      succ: {N_FS40_SSR_15, FS40}
+    N_FS40_SSW_14 : std_ulogic := (True & (N_FT9F2_SSR_35 | N_FP151_SSR_12));
+      pred: {N_FT9F2_SSR_35, N_FP151_SSR_12}
+      succ: {FS40}
+    N_FS40_SSR_15 : std_ulogic := (N_FS40_13);
+      pred: {N_FS40_13}
+      succ: {N_FP151_SSW_11, N_FT9F2_SSW_34}
+    N_FP171_16 : std_ulogic := (PP17st0 & True);
+      pred: {PP17st0}
+      succ: {FP171, N_FP171_SSR_18}
+    N_FP171_SSW_17 : std_ulogic := (True & (N_FS3_cnd0_SSR_29 | N_FS3_cnd1_SSR_32));
+      pred: {N_FS3_cnd1_SSR_32, N_FS3_cnd0_SSR_29}
+      succ: {FP171}
+    N_FP171_SSR_18 : std_ulogic := (N_FP171_16);
+      pred: {N_FP171_16}
+      succ: {N_FS3_cnd0_SSW_28, N_FS3_cnd1_SSW_31}
+    N_FP281_19 : std_ulogic := (PP28st0 & True & True & !PP11st0 & True & True & True & True & True & True & True & True & True & True & FS2_cnd0 & True & True & True & True);
+      pred: {FS2_cnd0, PP28st0, PP11st0}
+      succ: {FP281, N_FP281_SSR_21, N_FP281_SSR_23}
+    N_FP281_SSW_20 : std_ulogic := (True & N_FS10_SSR_6);
+      pred: {N_FS10_SSR_6}
+      succ: {FP281, N_FP281_SSR_23}
+    N_FP281_SSR_21 : std_ulogic := (N_FP281_19 & N_FP281_SSW_22);
+      pred: {N_FP281_19, N_FP281_SSW_22}
+      succ: {N_FS10_SSW_5, N_FS2P_C81_SSW_37}
+    N_FP281_SSW_22 : std_ulogic := (True & N_FP21_SSR_9);
+      pred: {N_FP21_SSR_9}
+      succ: {FP281, N_FP281_SSR_21}
+    N_FP281_SSR_23 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20);
+      pred: {N_FP281_19, N_FP281_SSW_20}
+      succ: {N_FP21_SSW_8}
+    N_FS22_24 : std_ulogic := (FS2_cnd1 & True & !PS2P_C0st0);
+      pred: {PS2P_C0st0, FS2_cnd1}
+      succ: {FS22, N_FS22_SSR_26}
+    N_FS22_SSW_25 : std_ulogic := (True & N_FP21_SSR_9);
+      pred: {N_FP21_SSR_9}
+      succ: {FS22}
+    N_FS22_SSR_26 : std_ulogic := (N_FS22_24);
+      pred: {N_FS22_24}
+      succ: {N_FP21_SSW_8}
+    N_FS3_cnd0_27 : std_ulogic := (True & True & True & True & True & PP14st0 & True & True & !PP15st0 & True & True);
+      pred: {PP14st0, PP15st0}
+      succ: {FS3_cnd0, N_FS3_cnd0_SSR_29}
+    N_FS3_cnd0_SSW_28 : std_ulogic := (True & N_FP171_SSR_18);
+      pred: {N_FP171_SSR_18}
+      succ: {FS3_cnd0}
+    N_FS3_cnd0_SSR_29 : std_ulogic := (N_FS3_cnd0_27);
+      pred: {N_FS3_cnd0_27}
+      succ: {N_FP171_SSW_17, N_FS3_cnd1_SSW_31}
+    N_FS3_cnd1_30 : std_ulogic := (True & True & True & True & True & True & S_IValid & !PP2S_C0st0 & PP12st0 & True & True & True & True & True);
+      pred: {S_IValid, PP12st0, PP2S_C0st0}
+      succ: {FS3_cnd1, N_FS3_cnd1_SSR_32}
+    N_FS3_cnd1_SSW_31 : std_ulogic := (True & N_FP171_SSR_18 & !N_FS3_cnd0_SSR_29);
+      pred: {N_FP171_SSR_18, N_FS3_cnd0_SSR_29}
+      succ: {FS3_cnd1}
+    N_FS3_cnd1_SSR_32 : std_ulogic := (N_FS3_cnd1_30);
+      pred: {N_FS3_cnd1_30}
+      succ: {N_FP171_SSW_17}
+    N_FT9F2_33 : std_ulogic := (True & True & True & True & !PP28st0 & True & True & True & True & True & PP2S_C9st0);
+      pred: {PP28st0, PP2S_C9st0}
+      succ: {N_FT9F2_SSR_35, FT9F2}
+    N_FT9F2_SSW_34 : std_ulogic := (True & N_FS40_SSR_15);
+      pred: {N_FS40_SSR_15}
+      succ: {FT9F2}
+    N_FT9F2_SSR_35 : std_ulogic := (N_FT9F2_33);
+      pred: {N_FT9F2_33}
+      succ: {N_FP151_SSW_11, N_FS40_SSW_14}
+    N_FS2P_C81_36 : std_ulogic := (PS2P_C8st0 & True & True & !PP14st0 & True & True & True & True & True & True & True & True & True & True & True & PP29st0 & True & True);
+      pred: {PP14st0, PS2P_C8st0, PP29st0}
+      succ: {FS2P_C81, N_FS2P_C81_SSR_38}
+    N_FS2P_C81_SSW_37 : std_ulogic := (True & N_FS10_SSR_6 & !N_FP281_SSR_21);
+      pred: {N_FS10_SSR_6, N_FP281_SSR_21}
+      succ: {FS2P_C81}
+    N_FS2P_C81_SSR_38 : std_ulogic := (N_FS2P_C81_36);
+      pred: {N_FS2P_C81_36}
+      succ: {N_FS10_SSW_5}
+-*-*- /1/ 0.01 sec: "TarjanSCC" -*-*-
+SCCL: [[FS10], [FP11], [DT11], [DP11], [DS10], [N_ow_IAck_0], [FP281], [FP21], [N_FP21_SSW_8], [N_FP281_SSR_23], [N_FP281_SSW_20], [FS2P_C81], [N_FS2P_C81_SSW_37], [N_FS10_SSR_6], [N_FS10_4], [PP1st0], [DP1st0], [DS22], [DT10F1], [DT10F2], [DT10J0], [DS21], [DP21], [N_FS10_SSW_5], [N_FP281_SSR_21], [N_FP281_SSW_22], [FS22], [N_FS22_SSW_25], [N_FP21_SSR_9], [N_FP21_7], [PP2st0], [DP2st0], [FP111], [DT111], [DP111], [N_FP281_19], [PP11st0], [DP11st0], [DT8G1], [DT8J0], [DP121], [N_ow_LinkOut_2], [FS3_cnd1], [FP171], [N_FP171_SSW_17], [N_FS3_cnd1_SSR_32], [N_FS3_cnd1_30], [PP12st0], [DP12st0], [DT5J0], [DP141], [N_ow_QValid_3], [N_FS2P_C81_SSR_38], [N_FS2P_C81_36], [FS3_cnd0], [N_FS3_cnd1_SSW_31], [N_FS3_cnd0_SSR_29], [N_FS3_cnd0_27], [PP14st0], [DP14st0], [FP151], [DT6F2], [DS40], [DT6F1], [DT6G1], [DP151], [FS40], [N_FS40_SSW_14], [N_FP151_SSR_12], [N_FP151_10], [PP15st0], [DP15st0], [FP161], [DT7G1], [DP161], [PP16st0], [DP16st0], [DS31], [DS32], [DP171], [N_FP151_SSW_11], [FT9F2], [N_FT9F2_SSW_34], [N_FS40_SSR_15], [N_FS40_13], [N_FS3_cnd0_SSW_28], [N_FP171_SSR_18], [N_FP171_16], [PP17st0], [DP17st0], [DP281], [N_FT9F2_SSR_35], [N_FT9F2_33], [PP28st0], [DP28st0], [DT3F1], [DT3F2], [DT3J0], [DP291], [PP29st0], [DP29st0], [FS2_cnd0], [N_FS22_SSR_26], [N_FS22_24], [FS2_cnd1], [DT9F1], [DT9F2], [FP2S_C01], [DP2S_C01], [PP2S_C0st0], [DP2S_C0st0], [FP2S_C11], [DP2S_C11], [PP2S_C1st0], [DP2S_C1st0], [FP2S_C21], [DP2S_C21], [PP2S_C2st0], [DP2S_C2st0], [FP2S_C31], [DP2S_C31], [PP2S_C3st0], [DP2S_C3st0], [FP2S_C41], [DP2S_C41], [PP2S_C4st0], [DP2S_C4st0], [FP2S_C51], [DP2S_C51], [PP2S_C5st0], [DP2S_C5st0], [FP2S_C61], [DP2S_C61], [PP2S_C6st0], [DP2S_C6st0], [FP2S_C71], [DP2S_C71], [PP2S_C7st0], [DP2S_C7st0], [FP2S_C81], [DP2S_C81], [PP2S_C8st0], [DP2S_C8st0], [DP2S_C91], [PP2S_C9st0], [DP2S_C9st0], [N_ow_ShiftEnable_1], [FS2P_C01], [DS2P_C01], [PS2P_C0st0], [DS2P_C0st0], [FS2P_C11], [DS2P_C11], [PS2P_C1st0], [DS2P_C1st0], [FS2P_C21], [DS2P_C21], [PS2P_C2st0], [DS2P_C2st0], [FS2P_C31], [DS2P_C31], [PS2P_C3st0], [DS2P_C3st0], [FS2P_C41], [DS2P_C41], [PS2P_C4st0], [DS2P_C4st0], [FS2P_C51], [DS2P_C51], [PS2P_C5st0], [DS2P_C5st0], [FS2P_C61], [DS2P_C61], [PS2P_C6st0], [DS2P_C6st0], [FS2P_C71], [DS2P_C71], [PS2P_C7st0], [DS2P_C7st0], [DS2P_C81], [PS2P_C8st0], [DS2P_C8st0]]
+-*-*- /0/ 0.14 sec: "run_phases" -*-*-
+==== The activation net is expanded and acyclic.
+Minimizing equations (espresso):
+  FS10...
+  FP11...
+  DP11...
+  PP1st0...
+  DP1st0...
+  FP21...
+  DP21...
+  PP2st0...
+  DP2st0...
+  FP111...
+  DP111...
+  PP11st0...
+  DP11st0...
+  DP121...
+  PP12st0...
+  DP12st0...
+  DP141...
+  PP14st0...
+  DP14st0...
+  FP151...
+  DP151...
+  PP15st0...
+  DP15st0...
+  FP161...
+  DP161...
+  PP16st0...
+  DP16st0...
+  FS40...
+  FP171...
+  DP171...
+  PP17st0...
+  DP17st0...
+  FP281...
+  DP281...
+  PP28st0...
+  DP28st0...
+  DP291...
+  PP29st0...
+  DP29st0...
+  DT11...
+  DS10...
+  FS2_cnd0...
+  FS2_cnd1...
+  FS22...
+  DS21...
+  DS22...
+  DT10J0...
+  DT10F1...
+  DT10F2...
+  DT111...
+  DT8J0...
+  DT8G1...
+  FS3_cnd0...
+  FS3_cnd1...
+  DS31...
+  DS32...
+  FT9F2...
+  DS40...
+  DT9F1...
+  DT9F2...
+  FP2S_C01...
+  DP2S_C01...
+  PP2S_C0st0...
+  DP2S_C0st0...
+  FP2S_C11...
+  DP2S_C11...
+  PP2S_C1st0...
+  DP2S_C1st0...
+  FP2S_C21...
+  DP2S_C21...
+  PP2S_C2st0...
+  DP2S_C2st0...
+  FP2S_C31...
+  DP2S_C31...
+  PP2S_C3st0...
+  DP2S_C3st0...
+  FP2S_C41...
+  DP2S_C41...
+  PP2S_C4st0...
+  DP2S_C4st0...
+  FP2S_C51...
+  DP2S_C51...
+  PP2S_C5st0...
+  DP2S_C5st0...
+  FP2S_C61...
+  DP2S_C61...
+  PP2S_C6st0...
+  DP2S_C6st0...
+  FP2S_C71...
+  DP2S_C71...
+  PP2S_C7st0...
+  DP2S_C7st0...
+  FP2S_C81...
+  DP2S_C81...
+  PP2S_C8st0...
+  DP2S_C8st0...
+  DP2S_C91...
+  PP2S_C9st0...
+  DP2S_C9st0...
+  FS2P_C01...
+  DS2P_C01...
+  PS2P_C0st0...
+  DS2P_C0st0...
+  FS2P_C11...
+  DS2P_C11...
+  PS2P_C1st0...
+  DS2P_C1st0...
+  FS2P_C21...
+  DS2P_C21...
+  PS2P_C2st0...
+  DS2P_C2st0...
+  FS2P_C31...
+  DS2P_C31...
+  PS2P_C3st0...
+  DS2P_C3st0...
+  FS2P_C41...
+  DS2P_C41...
+  PS2P_C4st0...
+  DS2P_C4st0...
+  FS2P_C51...
+  DS2P_C51...
+  PS2P_C5st0...
+  DS2P_C5st0...
+  FS2P_C61...
+  DS2P_C61...
+  PS2P_C6st0...
+  DS2P_C6st0...
+  FS2P_C71...
+  DS2P_C71...
+  PS2P_C7st0...
+  DS2P_C7st0...
+  FS2P_C81...
+  DS2P_C81...
+  PS2P_C8st0...
+  DS2P_C8st0...
+  DT3J0...
+  DT3F1...
+  DT3F2...
+  DT5J0...
+  DT6F1...
+  DT6F2...
+  DT6G1...
+  DT7G1...
+  N_ow_IAck_0...
+  N_ow_ShiftEnable_1...
+  N_ow_LinkOut_2...
+  N_ow_QValid_3...
+  N_FS10_4...
+  N_FS10_SSW_5...
+  N_FS10_SSR_6...
+  N_FP21_7...
+  N_FP21_SSW_8...
+  N_FP21_SSR_9...
+  N_FP151_10...
+  N_FP151_SSW_11...
+  N_FP151_SSR_12...
+  N_FS40_13...
+  N_FS40_SSW_14...
+  N_FS40_SSR_15...
+  N_FP171_16...
+  N_FP171_SSW_17...
+  N_FP171_SSR_18...
+  N_FP281_19...
+  N_FP281_SSW_20...
+  N_FP281_SSR_21...
+  N_FP281_SSW_22...
+  N_FP281_SSR_23...
+  N_FS22_24...
+  N_FS22_SSW_25...
+  N_FS22_SSR_26...
+  N_FS3_cnd0_27...
+  N_FS3_cnd0_SSW_28...
+  N_FS3_cnd0_SSR_29...
+  N_FS3_cnd1_30...
+  N_FS3_cnd1_SSW_31...
+  N_FS3_cnd1_SSR_32...
+  N_FT9F2_33...
+  N_FT9F2_SSW_34...
+  N_FT9F2_SSR_35...
+  N_FS2P_C81_36...
+  N_FS2P_C81_SSW_37...
+  N_FS2P_C81_SSR_38...
+All equations (all):
+    FS10 : std_ulogic := (N_FS10_4 & N_FS10_SSW_5);
+    FP11 : std_ulogic := (PP1st0 & !PP2st0 & S_LinkIn);
+    DP11 : void_t := DP1st0;
+    PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+    DP1st0 : void_t := @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+    FP21 : std_ulogic := (N_FP21_7 & N_FP21_SSW_8);
+    DP21 : void_t := DP2st0;
+    PP2st0 : std_ulogic := @@ff(FP11, (FP21 | !PP2st0), False);
+    DP2st0 : void_t := @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+    FP111 : std_ulogic := (PP11st0 & !PP12st0 & !S_IValid);
+    DP111 : void_t := DP11st0;
+    PP11st0 : std_ulogic := @@ff(FP281, (FP111 | !PP11st0), False);
+    DP11st0 : void_t := @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+    DP121 : void_t := DP12st0;
+    PP12st0 : std_ulogic := @@ff(FP111, (FS3_cnd1 | !PP12st0), True);
+    DP12st0 : void_t := @@ff(DT111, (FS3_cnd1 | !PP12st0), @@zero_const_tp());
+    DP141 : void_t := DP14st0;
+    PP14st0 : std_ulogic := @@ff(FS2P_C81, (FS3_cnd0 | !PP14st0), False);
+    DP14st0 : void_t := @@ff(DT3F2, (FS3_cnd0 | !PP14st0), @@zero_const_tp());
+    FP151 : std_ulogic := (N_FP151_10 & N_FP151_SSW_11);
+    DP151 : void_t := DP15st0;
+    PP15st0 : std_ulogic := @@ff(FS3_cnd0, (FP151 | !PP15st0), False);
+    DP15st0 : void_t := @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+    FP161 : std_ulogic := (PP16st0 & !PP29st0 & !S_QAck);
+    DP161 : void_t := DP16st0;
+    PP16st0 : std_ulogic := @@ff(FP151, (FP161 | !PP16st0), False);
+    DP16st0 : void_t := @@ff(DT6F2, (FP161 | !PP16st0), @@zero_const_tp());
+    FS40 : std_ulogic := (N_FS40_13 & N_FS40_SSW_14);
+    FP171 : std_ulogic := (N_FP171_16 & N_FP171_SSW_17);
+    DP171 : void_t := DP17st0;
+    PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+    DP17st0 : void_t := @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+    FP281 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20 & N_FP281_SSW_22);
+    DP281 : void_t := DP28st0;
+    PP28st0 : std_ulogic := @@ff(FT9F2, (FP281 | !PP28st0), False);
+    DP28st0 : void_t := @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+    DP291 : void_t := DP29st0;
+    PP29st0 : std_ulogic := @@ff(FP161, (FS2P_C81 | !PP29st0), True);
+    DP29st0 : void_t := @@ff(DT7G1, (FS2P_C81 | !PP29st0), @@zero_const_tp());
+    DT11 : void_t := DP11;
+    DS10 : ?? := (FP281 ? (DT10F2 : DT3F1));
+    FS2_cnd0 : std_ulogic := !S_LinkIn;
+    FS2_cnd1 : std_ulogic := S_LinkIn;
+    FS22 : std_ulogic := (N_FS22_24 & N_FS22_SSW_25);
+    DS21 : void_t := DP21;
+    DS22 : void_t := DP21;
+    DT10J0 : ?? := @!NONE!(DP281, DS21, @@nofo(FP281));
+    DT10F1 : ?? := DT10J0;
+    DT10F2 : ?? := DT10J0;
+    DT111 : void_t := DP111;
+    DT8J0 : ?? := @!NONE!(DP121, DS32, @@nofo(FS3_cnd1));
+    DT8G1 : ?? := DT8J0;
+    FS3_cnd0 : std_ulogic := (N_FS3_cnd0_27 & N_FS3_cnd0_SSW_28);
+    FS3_cnd1 : std_ulogic := (N_FS3_cnd1_30 & N_FS3_cnd1_SSW_31);
+    DS31 : void_t := DP171;
+    DS32 : void_t := DP171;
+    FT9F2 : std_ulogic := (N_FT9F2_33 & N_FT9F2_SSW_34);
+    DS40 : void_t := (FT9F2 ? (DT9F2 : DT6F1));
+    DT9F1 : void_t := DP2S_C91;
+    DT9F2 : void_t := DP2S_C91;
+    FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+    DP2S_C01 : void_t := DP2S_C0st0;
+    PP2S_C0st0 : std_ulogic := @@ff(FS3_cnd1, (FP2S_C01 | !PP2S_C0st0), False);
+    DP2S_C0st0 : void_t := @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+    FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+    DP2S_C11 : void_t := DP2S_C1st0;
+    PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+    DP2S_C1st0 : void_t := @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+    FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+    DP2S_C21 : void_t := DP2S_C2st0;
+    PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+    DP2S_C2st0 : void_t := @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+    FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+    DP2S_C31 : void_t := DP2S_C3st0;
+    PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+    DP2S_C3st0 : void_t := @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+    FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+    DP2S_C41 : void_t := DP2S_C4st0;
+    PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+    DP2S_C4st0 : void_t := @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+    FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+    DP2S_C51 : void_t := DP2S_C5st0;
+    PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+    DP2S_C5st0 : void_t := @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+    FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+    DP2S_C61 : void_t := DP2S_C6st0;
+    PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+    DP2S_C6st0 : void_t := @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+    FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+    DP2S_C71 : void_t := DP2S_C7st0;
+    PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+    DP2S_C7st0 : void_t := @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+    FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+    DP2S_C81 : void_t := DP2S_C8st0;
+    PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+    DP2S_C8st0 : void_t := @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+    DP2S_C91 : void_t := DP2S_C9st0;
+    PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FT9F2 | !PP2S_C9st0), False);
+    DP2S_C9st0 : void_t := @@ff(DP2S_C81, (FT9F2 | !PP2S_C9st0), @@zero_const_tp());
+    FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+    DS2P_C01 : void_t := DS2P_C0st0;
+    PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+    DS2P_C0st0 : void_t := @@ff(DS22, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+    FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+    DS2P_C11 : void_t := DS2P_C1st0;
+    PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+    DS2P_C1st0 : void_t := @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+    FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+    DS2P_C21 : void_t := DS2P_C2st0;
+    PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+    DS2P_C2st0 : void_t := @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+    FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+    DS2P_C31 : void_t := DS2P_C3st0;
+    PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+    DS2P_C3st0 : void_t := @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+    FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+    DS2P_C41 : void_t := DS2P_C4st0;
+    PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+    DS2P_C4st0 : void_t := @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+    FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+    DS2P_C51 : void_t := DS2P_C5st0;
+    PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+    DS2P_C5st0 : void_t := @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+    FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+    DS2P_C61 : void_t := DS2P_C6st0;
+    PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+    DS2P_C6st0 : void_t := @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+    FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+    DS2P_C71 : void_t := DS2P_C7st0;
+    PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+    DS2P_C7st0 : void_t := @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+    FS2P_C81 : std_ulogic := (N_FS2P_C81_36 & N_FS2P_C81_SSW_37);
+    DS2P_C81 : void_t := DS2P_C8st0;
+    PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+    DS2P_C8st0 : void_t := @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+    DT3J0 : ?? := @!NONE!(DS2P_C81, DP291, @@nofo(FS2P_C81));
+    DT3F1 : ?? := DT3J0;
+    DT3F2 : ?? := DT3J0;
+    DT5J0 : ?? := @!NONE!(DS31, DP141, @@nofo(FS3_cnd0));
+    DT6F1 : void_t := DT6G1;
+    DT6F2 : void_t := DT6G1;
+    DT6G1 : void_t := DP151;
+    DT7G1 : void_t := DP161;
+  * N_ow_IAck_0 : std_ulogic := FP281;
+  * N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+  * N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | FS3_cnd1 | FS3_cnd0 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)));
+  * N_ow_QValid_3 : std_ulogic := PP14st0;
+    N_FS10_4 : std_ulogic := !PP1st0;
+    N_FS10_SSW_5 : std_ulogic := (N_FP281_SSR_21 | N_FS2P_C81_SSR_38);
+    N_FS10_SSR_6 : std_ulogic := N_FS10_4;
+    N_FP21_7 : std_ulogic := PP2st0;
+    N_FP21_SSW_8 : std_ulogic := (N_FP281_SSR_23 | N_FS22_SSR_26);
+    N_FP21_SSR_9 : std_ulogic := N_FP21_7;
+    N_FP151_10 : std_ulogic := (PP15st0 & !PP16st0 & S_QAck);
+    N_FP151_SSW_11 : std_ulogic := (N_FS40_SSR_15 & !N_FT9F2_SSR_35);
+    N_FP151_SSR_12 : std_ulogic := N_FP151_10;
+    N_FS40_13 : std_ulogic := !PP17st0;
+    N_FS40_SSW_14 : std_ulogic := (N_FT9F2_SSR_35 | N_FP151_SSR_12);
+    N_FS40_SSR_15 : std_ulogic := N_FS40_13;
+    N_FP171_16 : std_ulogic := PP17st0;
+    N_FP171_SSW_17 : std_ulogic := (N_FS3_cnd0_SSR_29 | N_FS3_cnd1_SSR_32);
+    N_FP171_SSR_18 : std_ulogic := N_FP171_16;
+    N_FP281_19 : std_ulogic := (PP28st0 & !PP11st0 & FS2_cnd0);
+    N_FP281_SSW_20 : std_ulogic := N_FS10_SSR_6;
+    N_FP281_SSR_21 : std_ulogic := (N_FP281_19 & N_FP281_SSW_22);
+    N_FP281_SSW_22 : std_ulogic := N_FP21_SSR_9;
+    N_FP281_SSR_23 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20);
+    N_FS22_24 : std_ulogic := (FS2_cnd1 & !PS2P_C0st0);
+    N_FS22_SSW_25 : std_ulogic := N_FP21_SSR_9;
+    N_FS22_SSR_26 : std_ulogic := N_FS22_24;
+    N_FS3_cnd0_27 : std_ulogic := (PP14st0 & !PP15st0);
+    N_FS3_cnd0_SSW_28 : std_ulogic := N_FP171_SSR_18;
+    N_FS3_cnd0_SSR_29 : std_ulogic := N_FS3_cnd0_27;
+    N_FS3_cnd1_30 : std_ulogic := (S_IValid & !PP2S_C0st0 & PP12st0);
+    N_FS3_cnd1_SSW_31 : std_ulogic := (N_FP171_SSR_18 & !N_FS3_cnd0_SSR_29);
+    N_FS3_cnd1_SSR_32 : std_ulogic := N_FS3_cnd1_30;
+    N_FT9F2_33 : std_ulogic := (!PP28st0 & PP2S_C9st0);
+    N_FT9F2_SSW_34 : std_ulogic := N_FS40_SSR_15;
+    N_FT9F2_SSR_35 : std_ulogic := N_FT9F2_33;
+    N_FS2P_C81_36 : std_ulogic := (PS2P_C8st0 & !PP14st0 & PP29st0);
+    N_FS2P_C81_SSW_37 : std_ulogic := (N_FS10_SSR_6 & !N_FP281_SSR_21);
+    N_FS2P_C81_SSR_38 : std_ulogic := N_FS2P_C81_36;
+Module ports:
+Minimizing equations (espresso):
+  FS10...
+  FP11...
+  DP11...
+  PP1st0...
+  DP1st0...
+  FP21...
+  DP21...
+  PP2st0...
+  DP2st0...
+  FP111...
+  DP111...
+  PP11st0...
+  DP11st0...
+  DP121...
+  PP12st0...
+  DP12st0...
+  DP141...
+  PP14st0...
+  DP14st0...
+  FP151...
+  DP151...
+  PP15st0...
+  DP15st0...
+  FP161...
+  DP161...
+  PP16st0...
+  DP16st0...
+  FS40...
+  FP171...
+  DP171...
+  PP17st0...
+  DP17st0...
+  FP281...
+  DP281...
+  PP28st0...
+  DP28st0...
+  DP291...
+  PP29st0...
+  DP29st0...
+  DT11...
+  DS10...
+  FS2_cnd0...
+  FS2_cnd1...
+  FS22...
+  DS21...
+  DS22...
+  DT10J0...
+  DT10F1...
+  DT10F2...
+  DT111...
+  DT8J0...
+  DT8G1...
+  FS3_cnd0...
+  FS3_cnd1...
+  DS31...
+  DS32...
+  FT9F2...
+  DS40...
+  DT9F1...
+  DT9F2...
+  FP2S_C01...
+  DP2S_C01...
+  PP2S_C0st0...
+  DP2S_C0st0...
+  FP2S_C11...
+  DP2S_C11...
+  PP2S_C1st0...
+  DP2S_C1st0...
+  FP2S_C21...
+  DP2S_C21...
+  PP2S_C2st0...
+  DP2S_C2st0...
+  FP2S_C31...
+  DP2S_C31...
+  PP2S_C3st0...
+  DP2S_C3st0...
+  FP2S_C41...
+  DP2S_C41...
+  PP2S_C4st0...
+  DP2S_C4st0...
+  FP2S_C51...
+  DP2S_C51...
+  PP2S_C5st0...
+  DP2S_C5st0...
+  FP2S_C61...
+  DP2S_C61...
+  PP2S_C6st0...
+  DP2S_C6st0...
+  FP2S_C71...
+  DP2S_C71...
+  PP2S_C7st0...
+  DP2S_C7st0...
+  FP2S_C81...
+  DP2S_C81...
+  PP2S_C8st0...
+  DP2S_C8st0...
+  DP2S_C91...
+  PP2S_C9st0...
+  DP2S_C9st0...
+  FS2P_C01...
+  DS2P_C01...
+  PS2P_C0st0...
+  DS2P_C0st0...
+  FS2P_C11...
+  DS2P_C11...
+  PS2P_C1st0...
+  DS2P_C1st0...
+  FS2P_C21...
+  DS2P_C21...
+  PS2P_C2st0...
+  DS2P_C2st0...
+  FS2P_C31...
+  DS2P_C31...
+  PS2P_C3st0...
+  DS2P_C3st0...
+  FS2P_C41...
+  DS2P_C41...
+  PS2P_C4st0...
+  DS2P_C4st0...
+  FS2P_C51...
+  DS2P_C51...
+  PS2P_C5st0...
+  DS2P_C5st0...
+  FS2P_C61...
+  DS2P_C61...
+  PS2P_C6st0...
+  DS2P_C6st0...
+  FS2P_C71...
+  DS2P_C71...
+  PS2P_C7st0...
+  DS2P_C7st0...
+  FS2P_C81...
+  DS2P_C81...
+  PS2P_C8st0...
+  DS2P_C8st0...
+  DT3J0...
+  DT3F1...
+  DT3F2...
+  DT5J0...
+  DT6F1...
+  DT6F2...
+  DT6G1...
+  DT7G1...
+  N_ow_IAck_0...
+  N_ow_ShiftEnable_1...
+  N_ow_LinkOut_2...
+  N_ow_QValid_3...
+  N_FS10_4...
+  N_FS10_SSW_5...
+  N_FS10_SSR_6...
+  N_FP21_7...
+  N_FP21_SSW_8...
+  N_FP21_SSR_9...
+  N_FP151_10...
+  N_FP151_SSW_11...
+  N_FP151_SSR_12...
+  N_FS40_13...
+  N_FS40_SSW_14...
+  N_FS40_SSR_15...
+  N_FP171_16...
+  N_FP171_SSW_17...
+  N_FP171_SSR_18...
+  N_FP281_19...
+  N_FP281_SSW_20...
+  N_FP281_SSR_21...
+  N_FP281_SSW_22...
+  N_FP281_SSR_23...
+  N_FS22_24...
+  N_FS22_SSW_25...
+  N_FS22_SSR_26...
+  N_FS3_cnd0_27...
+  N_FS3_cnd0_SSW_28...
+  N_FS3_cnd0_SSR_29...
+  N_FS3_cnd1_30...
+  N_FS3_cnd1_SSW_31...
+  N_FS3_cnd1_SSR_32...
+  N_FT9F2_33...
+  N_FT9F2_SSW_34...
+  N_FT9F2_SSR_35...
+  N_FS2P_C81_36...
+  N_FS2P_C81_SSW_37...
+  N_FS2P_C81_SSR_38...
+Eliminating duplicate equations:
+    Dup: DS22 <-- DS21, necessary: ((False, False))
+    Dup: DT10F2 <-- DT10F1, necessary: ((False, False))
+    Dup: DS32 <-- DS31, necessary: ((False, False))
+    Dup: DT9F2 <-- DT9F1, necessary: ((False, False))
+    Dup: DT3F2 <-- DT3F1, necessary: ((False, False))
+    Dup: DT6F2 <-- DT6F1, necessary: ((False, False))
+    Dup: N_FS22_SSW_25 <-- N_FP281_SSW_22, necessary: ((False, False))
+Eliminating duplicate equations:
+All equations (all):
+    (0xddfa2e92f63edaf) FS10 : std_ulogic := (N_FS10_4 & N_FS10_SSW_5);
+    (0x33d67fb7425a117) FP11 : std_ulogic := (PP1st0 & !PP2st0 & S_LinkIn);
+    (0x7fe2bdbda350) DP11 : void_t := DP1st0;
+    (0x4b2411563baeef3) PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+    (0xea7c29818eef743) DP1st0 : void_t := @@ff(DS10, (FP11 | !PP1st0), @@zero_const_tp());
+    (0xddfa2e92f6397af) FP21 : std_ulogic := (N_FP21_7 & N_FP21_SSW_8);
+    (0x7fe2bdbda810) DP21 : void_t := DP2st0;
+    (0x4b2411563b662fb) PP2st0 : std_ulogic := @@ff(FP11, (FP21 | !PP2st0), False);
+    (0xea7c29818fe7943) DP2st0 : void_t := @@ff(DT11, (FP21 | !PP2st0), @@zero_const_tp());
+    (0xddc5dfcc299eb2f) FP111 : std_ulogic := (PP11st0 & !PP12st0 & !S_IValid);
+    (0x7fe2bdbdacd0) DP111 : void_t := DP11st0;
+    (0x4b2411563a51afb) PP11st0 : std_ulogic := @@ff(FP281, (FP111 | !PP11st0), False);
+    (0xea7c29818eebf43) DP11st0 : void_t := @@ff(DT10F1, (FP111 | !PP11st0), @@zero_const_tp());
+    (0x7fe2bdbd01d0) DP121 : void_t := DP12st0;
+    (0x4b241155016a6f3) PP12st0 : std_ulogic := @@ff(FP111, (FS3_cnd1 | !PP12st0), True);
+    (0xea7c2982b5e9b43) DP12st0 : void_t := @@ff(DT111, (FS3_cnd1 | !PP12st0), @@zero_const_tp());
+    (0x7fe2bd691cd0) DP141 : void_t := DP14st0;
+    (0x4b24114fe631afb) PP14st0 : std_ulogic := @@ff(FS2P_C81, (FS3_cnd0 | !PP14st0), False);
+    (0xea7c29985373143) DP14st0 : void_t := @@ff(DT3F1, (FS3_cnd0 | !PP14st0), @@zero_const_tp());
+    (0xddfa2e92922c5af) FP151 : std_ulogic := (N_FP151_10 & N_FP151_SSW_11);
+    (0x7fe2bdbd07d0) DP151 : void_t := DP15st0;
+    (0x4b2411564827afb) PP15st0 : std_ulogic := @@ff(FS3_cnd0, (FP151 | !PP15st0), False);
+    (0xea7c298198c2543) DP15st0 : void_t := @@ff(DT5J0, (FP151 | !PP15st0), @@zero_const_tp());
+    (0xddc5dfcc28a392f) FP161 : std_ulogic := (PP16st0 & !PP29st0 & !S_QAck);
+    (0x7fe2bdbd0c90) DP161 : void_t := DP16st0;
+    (0x4b2411562cf7efb) PP16st0 : std_ulogic := @@ff(FP151, (FP161 | !PP16st0), False);
+    (0xea7c2981fd65543) DP16st0 : void_t := @@ff(DT6F1, (FP161 | !PP16st0), @@zero_const_tp());
+    (0xddfa2e92f63cbaf) FS40 : std_ulogic := (N_FS40_13 & N_FS40_SSW_14);
+    (0xddfa2e92f63c1af) FP171 : std_ulogic := (N_FP171_16 & N_FP171_SSW_17);
+    (0x7fe2bdbd5190) DP171 : void_t := DP17st0;
+    (0x4b24115626498f3) PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+    (0xea7c29819308f43) DP17st0 : void_t := @@ff(DS40, (FP171 | !PP17st0), @@zero_const_tp());
+    (0xddc5dfcc28ae72f) FP281 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20 & N_FP281_SSW_22);
+    (0x7fe2bdbd5650) DP281 : void_t := DP28st0;
+    (0x4b24115627b90fb) PP28st0 : std_ulogic := @@ff(FT9F2, (FP281 | !PP28st0), False);
+    (0xea7c298192f8543) DP28st0 : void_t := @@ff(DT9F1, (FP281 | !PP28st0), @@zero_const_tp());
+    (0x7fe2bdbd5b10) DP291 : void_t := DP29st0;
+    (0x4b24115503e88f3) PP29st0 : std_ulogic := @@ff(FP161, (FS2P_C81 | !PP29st0), True);
+    (0xea7c2982d27e143) DP29st0 : void_t := @@ff(DT7G1, (FS2P_C81 | !PP29st0), @@zero_const_tp());
+    (0x7fe2bdbda250) DT11 : void_t := DP11;
+    (0x563ce02d49f2315) DS10 : ?? := (FP281 ? (DT10F1 : DT3F1));
+    (0xddc58a24b6fd657) FS2_cnd0 : std_ulogic := !S_LinkIn;
+    (0x7fe2bdbd5b90) FS2_cnd1 : std_ulogic := S_LinkIn;
+    (0xddfa2e92f63e9af) FS22 : std_ulogic := (N_FS22_24 & N_FP281_SSW_22);
+    (0x7fe2bdbda710) DS21 : void_t := DP21;
+    (0x7fe2bdbe2850) DS22 : void_t := DS21;
+    (0x12bc05378b3eb51) DT10J0 : ?? := @!NONE!(DP281, DS21, @@nofo(FP281));
+    (0x7fe2bdbe2c10) DT10F1 : ?? := DT10J0;
+    (0x7fe2bdbea390) DT10F2 : ?? := DT10F1;
+    (0x7fe2bdbdabd0) DT111 : void_t := DP111;
+    (0x12bc0534a64c951) DT8J0 : ?? := @!NONE!(DP121, DS31, @@nofo(FS3_cnd1));
+    (0x7fe2bdbe2ad0) DT8G1 : ?? := DT8J0;
+    (0xddfa2e92f63e1af) FS3_cnd0 : std_ulogic := (N_FS3_cnd0_27 & N_FS3_cnd0_SSW_28);
+    (0xddfa2e92f63edaf) FS3_cnd1 : std_ulogic := (N_FS3_cnd1_30 & N_FS3_cnd1_SSW_31);
+    (0x7fe2bdbd5090) DS31 : void_t := DP171;
+    (0x7fe2bdbead90) DS32 : void_t := DS31;
+    (0xddfa2e92f63f1af) FT9F2 : std_ulogic := (N_FT9F2_33 & N_FT9F2_SSW_34);
+    (0x563ce02d4d43915) DS40 : void_t := (FT9F2 ? (DT9F1 : DT6F1));
+    (0x7fe2bd73d490) DT9F1 : void_t := DP2S_C91;
+    (0x7fe2bdbf18d0) DT9F2 : void_t := DT9F1;
+    (0x33e98ee996bcb97) FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+    (0x7fe2bdbf1cd0) DP2S_C01 : void_t := DP2S_C0st0;
+    (0x4b24115605faefb) PP2S_C0st0 : std_ulogic := @@ff(FS3_cnd1, (FP2S_C01 | !PP2S_C0st0), False);
+    (0xea7c2981d4e7343) DP2S_C0st0 : void_t := @@ff(DT8G1, (FP2S_C01 | !PP2S_C0st0), @@zero_const_tp());
+    (0x33e98ee996aaf97) FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+    (0x7fe2bdbf6350) DP2S_C11 : void_t := DP2S_C1st0;
+    (0x4b24115669596fb) PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+    (0xea7c2981dcc0943) DP2S_C1st0 : void_t := @@ff(DP2S_C01, (FP2S_C11 | !PP2S_C1st0), @@zero_const_tp());
+    (0x33e98ee996b0d97) FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+    (0x7fe2bdbf6990) DP2S_C21 : void_t := DP2S_C2st0;
+    (0x4b24115668eb8fb) PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+    (0xea7c2981ddaad43) DP2S_C2st0 : void_t := @@ff(DP2S_C11, (FP2S_C21 | !PP2S_C2st0), @@zero_const_tp());
+    (0x33e98ee995d9397) FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+    (0x7fe2bdbf6fd0) DP2S_C31 : void_t := DP2S_C3st0;
+    (0x4b24115668396fb) PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+    (0xea7c2981dd7f343) DP2S_C3st0 : void_t := @@ff(DP2S_C21, (FP2S_C31 | !PP2S_C3st0), @@zero_const_tp());
+    (0x33e98ee9958d797) FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+    (0x7fe2bdbfb650) DP2S_C41 : void_t := DP2S_C4st0;
+    (0x4b24115670164fb) PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+    (0xea7c2981c556143) DP2S_C4st0 : void_t := @@ff(DP2S_C31, (FP2S_C41 | !PP2S_C4st0), @@zero_const_tp());
+    (0x33e98ee86bac597) FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+    (0x7fe2bdbfbc90) DP2S_C51 : void_t := DP2S_C5st0;
+    (0x4b24115671960fb) PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+    (0xea7c2981c4d4543) DP2S_C5st0 : void_t := @@ff(DP2S_C41, (FP2S_C51 | !PP2S_C5st0), @@zero_const_tp());
+    (0x33e98ee85443997) FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+    (0x7fe2bdc03310) DP2S_C61 : void_t := DP2S_C6st0;
+    (0x4b2411587e88efb) PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+    (0xea7c298fcbc9b43) DP2S_C6st0 : void_t := @@ff(DP2S_C51, (FP2S_C61 | !PP2S_C6st0), @@zero_const_tp());
+    (0x33e98ee8545ff97) FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+    (0x7fe2bdc03950) DP2S_C71 : void_t := DP2S_C7st0;
+    (0x4b241158400cafb) PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+    (0xea7c298ff54df43) DP2S_C7st0 : void_t := @@ff(DP2S_C61, (FP2S_C71 | !PP2S_C7st0), @@zero_const_tp());
+    (0x33e98eea9bf2d97) FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+    (0x7fe2bdc03f90) DP2S_C81 : void_t := DP2S_C8st0;
+    (0x4b24115840e88fb) PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+    (0xea7c298ff5a9d43) DP2S_C8st0 : void_t := @@ff(DP2S_C71, (FP2S_C81 | !PP2S_C8st0), @@zero_const_tp());
+    (0x7fe2bd73d610) DP2S_C91 : void_t := DP2S_C9st0;
+    (0x4b24114fc10e6fb) PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FT9F2 | !PP2S_C9st0), False);
+    (0xea7c2998744e343) DP2S_C9st0 : void_t := @@ff(DP2S_C81, (FT9F2 | !PP2S_C9st0), @@zero_const_tp());
+    (0x33e98eeac224797) FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+    (0x7fe2bd73d850) DS2P_C01 : void_t := DS2P_C0st0;
+    (0x4b24114ff8a74fb) PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+    (0xea7c29984de6143) DS2P_C0st0 : void_t := @@ff(DS21, (FS2P_C01 | !PS2P_C0st0), @@zero_const_tp());
+    (0x33e98eeaddc7597) FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+    (0x7fe2bd73de90) DS2P_C11 : void_t := DS2P_C1st0;
+    (0x4b24114ccc446fb) PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+    (0xea7c299b1fbd543) DS2P_C1st0 : void_t := @@ff(DS2P_C01, (FS2P_C11 | !PS2P_C1st0), @@zero_const_tp());
+    (0x33e98eeade00997) FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+    (0x7fe2bd742510) DS2P_C21 : void_t := DS2P_C2st0;
+    (0x4b24114c4a33efb) PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+    (0xea7c299bff72b43) DS2P_C2st0 : void_t := @@ff(DS2P_C11, (FS2P_C21 | !PS2P_C2st0), @@zero_const_tp());
+    (0x33e98eeadde9f97) FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+    (0x7fe2bd742b50) DS2P_C31 : void_t := DS2P_C3st0;
+    (0x4b24114c483dafb) PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+    (0xea7c299bfd7cf43) DS2P_C3st0 : void_t := @@ff(DS2P_C21, (FS2P_C31 | !PS2P_C3st0), @@zero_const_tp());
+    (0x33e98eeadd8d397) FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+    (0x7fe2bd74d1d0) DS2P_C41 : void_t := DS2P_C4st0;
+    (0x4b24114c57578fb) PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+    (0xea7c299be216d43) DS2P_C4st0 : void_t := @@ff(DS2P_C31, (FS2P_C41 | !PS2P_C4st0), @@zero_const_tp());
+    (0x33e98eeadda5197) FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+    (0x7fe2bd74d810) DS2P_C51 : void_t := DS2P_C5st0;
+    (0x4b24114c54766fb) PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+    (0xea7c299be148143) DS2P_C5st0 : void_t := @@ff(DS2P_C41, (FS2P_C51 | !PS2P_C5st0), @@zero_const_tp());
+    (0x33e98eeadf06797) FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+    (0x7fe2bd74de50) DS2P_C61 : void_t := DS2P_C6st0;
+    (0x4b24114c556a2fb) PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+    (0xea7c299be02a743) DS2P_C6st0 : void_t := @@ff(DS2P_C51, (FS2P_C61 | !PS2P_C6st0), @@zero_const_tp());
+    (0x33e98eeadf6bb97) FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+    (0x7fe2bd7474d0) DS2P_C71 : void_t := DS2P_C7st0;
+    (0x4b24114c42fb0fb) PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+    (0xea7c299bf7b9543) DS2P_C7st0 : void_t := @@ff(DS2P_C61, (FS2P_C71 | !PS2P_C7st0), @@zero_const_tp());
+    (0xddfa2e92f63cfaf) FS2P_C81 : std_ulogic := (N_FS2P_C81_36 & N_FS2P_C81_SSW_37);
+    (0x7fe2bd747b10) DS2P_C81 : void_t := DS2P_C8st0;
+    (0x4b24114c434ccfb) PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+    (0xea7c299bf60d943) DS2P_C8st0 : void_t := @@ff(DS2P_C71, (FS2P_C81 | !PS2P_C8st0), @@zero_const_tp());
+    (0x12bc0534caa1f51) DT3J0 : ?? := @!NONE!(DS2P_C81, DP291, @@nofo(FS2P_C81));
+    (0x7fe2bd7421d0) DT3F1 : ?? := DT3J0;
+    (0x7fe2bd747e50) DT3F2 : ?? := DT3F1;
+    (0x12bc0534cc48351) DT5J0 : ?? := @!NONE!(DS31, DP141, @@nofo(FS3_cnd0));
+    (0x7fe2bd74a690) DT6F1 : void_t := DT6G1;
+    (0x7fe2bd74a0d0) DT6F2 : void_t := DT6F1;
+    (0x7fe2bdbd06d0) DT6G1 : void_t := DP151;
+    (0x7fe2bdbd0b90) DT7G1 : void_t := DP161;
+  * (0x7fe2bdbd5490) N_ow_IAck_0 : std_ulogic := FP281;
+  * (0x23128dc257ee754) N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+  * (0x232d7c9d204ced4) N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | FS3_cnd1 | FS3_cnd0 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)));
+  * (0x7fe2bd691c90) N_ow_QValid_3 : std_ulogic := PP14st0;
+    (0xddc58a24b681c57) N_FS10_4 : std_ulogic := !PP1st0;
+    (0x23128dc239dab54) N_FS10_SSW_5 : std_ulogic := (N_FP281_SSR_21 | N_FS2P_C81_SSR_38);
+    (0x7fe2bd778610) N_FS10_SSR_6 : std_ulogic := N_FS10_4;
+    (0x7fe2bdbda790) N_FP21_7 : std_ulogic := PP2st0;
+    (0x23128dc2317af54) N_FP21_SSW_8 : std_ulogic := (N_FP281_SSR_23 | N_FS22_SSR_26);
+    (0x7fe2bd75ce50) N_FP21_SSR_9 : std_ulogic := N_FP21_7;
+    (0x33d67fb740a5517) N_FP151_10 : std_ulogic := (PP15st0 & !PP16st0 & S_QAck);
+    (0x33e98eea9078797) N_FP151_SSW_11 : std_ulogic := (N_FS40_SSR_15 & !N_FT9F2_SSR_35);
+    (0x7fe2bdbe2550) N_FP151_SSR_12 : std_ulogic := N_FP151_10;
+    (0xddc58a24b6f8257) N_FS40_13 : std_ulogic := !PP17st0;
+    (0x23128dc23981b54) N_FS40_SSW_14 : std_ulogic := (N_FT9F2_SSR_35 | N_FP151_SSR_12);
+    (0x7fe2bd760a10) N_FS40_SSR_15 : std_ulogic := N_FS40_13;
+    (0x7fe2bdbd5110) N_FP171_16 : std_ulogic := PP17st0;
+    (0x23128dc2312c754) N_FP171_SSW_17 : std_ulogic := (N_FS3_cnd0_SSR_29 | N_FS3_cnd1_SSR_32);
+    (0x7fe2bd76cfd0) N_FP171_SSR_18 : std_ulogic := N_FP171_16;
+    (0x33d67fb72645d17) N_FP281_19 : std_ulogic := (PP28st0 & !PP11st0 & FS2_cnd0);
+    (0x7fe2bdbda950) N_FP281_SSW_20 : std_ulogic := N_FS10_SSR_6;
+    (0xddfa2e92f607baf) N_FP281_SSR_21 : std_ulogic := (N_FP281_19 & N_FP281_SSW_22);
+    (0x7fe2bd75c810) N_FP281_SSW_22 : std_ulogic := N_FP21_SSR_9;
+    (0xddfa2e9293f79af) N_FP281_SSR_23 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20);
+    (0x33e98eeac101597) N_FS22_24 : std_ulogic := (FS2_cnd1 & !PS2P_C0st0);
+    (0x7fe2bd76b3d0) N_FS22_SSW_25 : std_ulogic := N_FP281_SSW_22;
+    (0x7fe2bd76b5d0) N_FS22_SSR_26 : std_ulogic := N_FS22_24;
+    (0x33e98ee9f42bf97) N_FS3_cnd0_27 : std_ulogic := (PP14st0 & !PP15st0);
+    (0x7fe2bd76ca50) N_FS3_cnd0_SSW_28 : std_ulogic := N_FP171_SSR_18;
+    (0x7fe2bd76ba10) N_FS3_cnd0_SSR_29 : std_ulogic := N_FS3_cnd0_27;
+    (0x33d67fb748e6117) N_FS3_cnd1_30 : std_ulogic := (S_IValid & !PP2S_C0st0 & PP12st0);
+    (0x33e98eead526997) N_FS3_cnd1_SSW_31 : std_ulogic := (N_FP171_SSR_18 & !N_FS3_cnd0_SSR_29);
+    (0x7fe2bd761650) N_FS3_cnd1_SSR_32 : std_ulogic := N_FS3_cnd1_30;
+    (0x33e98ee9f805197) N_FT9F2_33 : std_ulogic := (!PP28st0 & PP2S_C9st0);
+    (0x7fe2bd760590) N_FT9F2_SSW_34 : std_ulogic := N_FS40_SSR_15;
+    (0x7fe2bd761150) N_FT9F2_SSR_35 : std_ulogic := N_FT9F2_33;
+    (0x33d67fb4745ad17) N_FS2P_C81_36 : std_ulogic := (PS2P_C8st0 & !PP14st0 & PP29st0);
+    (0x33e98eeab093197) N_FS2P_C81_SSW_37 : std_ulogic := (N_FS10_SSR_6 & !N_FP281_SSR_21);
+    (0x7fe2bd67f1d0) N_FS2P_C81_SSR_38 : std_ulogic := N_FS2P_C81_36;
+Extracting undefined attribs (assuming primary inputs):
+    {S_QAck, S_IData, S_IValid, S_LinkIn}
+All equations (only non-dead):
+  * FS10 : std_ulogic := (N_FS10_4 & N_FS10_SSW_5);
+  * FP11 : std_ulogic := (PP1st0 & !PP2st0 & S_LinkIn);
+  * PP1st0 : std_ulogic := @@ff(FS10, (FP11 | !PP1st0), True);
+  * FP21 : std_ulogic := (N_FP21_7 & N_FP21_SSW_8);
+  * PP2st0 : std_ulogic := @@ff(FP11, (FP21 | !PP2st0), False);
+  * FP111 : std_ulogic := (PP11st0 & !PP12st0 & !S_IValid);
+  * PP11st0 : std_ulogic := @@ff(FP281, (FP111 | !PP11st0), False);
+  * PP12st0 : std_ulogic := @@ff(FP111, (FS3_cnd1 | !PP12st0), True);
+  * PP14st0 : std_ulogic := @@ff(FS2P_C81, (FS3_cnd0 | !PP14st0), False);
+  * FP151 : std_ulogic := (N_FP151_10 & N_FP151_SSW_11);
+  * PP15st0 : std_ulogic := @@ff(FS3_cnd0, (FP151 | !PP15st0), False);
+  * FP161 : std_ulogic := (PP16st0 & !PP29st0 & !S_QAck);
+  * PP16st0 : std_ulogic := @@ff(FP151, (FP161 | !PP16st0), False);
+  * FS40 : std_ulogic := (N_FS40_13 & N_FS40_SSW_14);
+  * FP171 : std_ulogic := (N_FP171_16 & N_FP171_SSW_17);
+  * PP17st0 : std_ulogic := @@ff(FS40, (FP171 | !PP17st0), True);
+  * FP281 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20 & N_FP281_SSW_22);
+  * PP28st0 : std_ulogic := @@ff(FT9F2, (FP281 | !PP28st0), False);
+  * PP29st0 : std_ulogic := @@ff(FP161, (FS2P_C81 | !PP29st0), True);
+  * FS2_cnd0 : std_ulogic := !S_LinkIn;
+  * FS2_cnd1 : std_ulogic := S_LinkIn;
+  * FS22 : std_ulogic := (N_FS22_24 & N_FP281_SSW_22);
+  * FS3_cnd0 : std_ulogic := (N_FS3_cnd0_27 & N_FS3_cnd0_SSW_28);
+  * FS3_cnd1 : std_ulogic := (N_FS3_cnd1_30 & N_FS3_cnd1_SSW_31);
+  * FT9F2 : std_ulogic := (N_FT9F2_33 & N_FT9F2_SSW_34);
+  * FP2S_C01 : std_ulogic := (PP2S_C0st0 & !PP2S_C1st0);
+  * PP2S_C0st0 : std_ulogic := @@ff(FS3_cnd1, (FP2S_C01 | !PP2S_C0st0), False);
+  * FP2S_C11 : std_ulogic := (PP2S_C1st0 & !PP2S_C2st0);
+  * PP2S_C1st0 : std_ulogic := @@ff(FP2S_C01, (FP2S_C11 | !PP2S_C1st0), False);
+  * FP2S_C21 : std_ulogic := (PP2S_C2st0 & !PP2S_C3st0);
+  * PP2S_C2st0 : std_ulogic := @@ff(FP2S_C11, (FP2S_C21 | !PP2S_C2st0), False);
+  * FP2S_C31 : std_ulogic := (PP2S_C3st0 & !PP2S_C4st0);
+  * PP2S_C3st0 : std_ulogic := @@ff(FP2S_C21, (FP2S_C31 | !PP2S_C3st0), False);
+  * FP2S_C41 : std_ulogic := (PP2S_C4st0 & !PP2S_C5st0);
+  * PP2S_C4st0 : std_ulogic := @@ff(FP2S_C31, (FP2S_C41 | !PP2S_C4st0), False);
+  * FP2S_C51 : std_ulogic := (PP2S_C5st0 & !PP2S_C6st0);
+  * PP2S_C5st0 : std_ulogic := @@ff(FP2S_C41, (FP2S_C51 | !PP2S_C5st0), False);
+  * FP2S_C61 : std_ulogic := (PP2S_C6st0 & !PP2S_C7st0);
+  * PP2S_C6st0 : std_ulogic := @@ff(FP2S_C51, (FP2S_C61 | !PP2S_C6st0), False);
+  * FP2S_C71 : std_ulogic := (PP2S_C7st0 & !PP2S_C8st0);
+  * PP2S_C7st0 : std_ulogic := @@ff(FP2S_C61, (FP2S_C71 | !PP2S_C7st0), False);
+  * FP2S_C81 : std_ulogic := (PP2S_C8st0 & !PP2S_C9st0);
+  * PP2S_C8st0 : std_ulogic := @@ff(FP2S_C71, (FP2S_C81 | !PP2S_C8st0), False);
+  * PP2S_C9st0 : std_ulogic := @@ff(FP2S_C81, (FT9F2 | !PP2S_C9st0), False);
+  * FS2P_C01 : std_ulogic := (PS2P_C0st0 & !PS2P_C1st0);
+  * PS2P_C0st0 : std_ulogic := @@ff(FS22, (FS2P_C01 | !PS2P_C0st0), False);
+  * FS2P_C11 : std_ulogic := (PS2P_C1st0 & !PS2P_C2st0);
+  * PS2P_C1st0 : std_ulogic := @@ff(FS2P_C01, (FS2P_C11 | !PS2P_C1st0), False);
+  * FS2P_C21 : std_ulogic := (PS2P_C2st0 & !PS2P_C3st0);
+  * PS2P_C2st0 : std_ulogic := @@ff(FS2P_C11, (FS2P_C21 | !PS2P_C2st0), False);
+  * FS2P_C31 : std_ulogic := (PS2P_C3st0 & !PS2P_C4st0);
+  * PS2P_C3st0 : std_ulogic := @@ff(FS2P_C21, (FS2P_C31 | !PS2P_C3st0), False);
+  * FS2P_C41 : std_ulogic := (PS2P_C4st0 & !PS2P_C5st0);
+  * PS2P_C4st0 : std_ulogic := @@ff(FS2P_C31, (FS2P_C41 | !PS2P_C4st0), False);
+  * FS2P_C51 : std_ulogic := (PS2P_C5st0 & !PS2P_C6st0);
+  * PS2P_C5st0 : std_ulogic := @@ff(FS2P_C41, (FS2P_C51 | !PS2P_C5st0), False);
+  * FS2P_C61 : std_ulogic := (PS2P_C6st0 & !PS2P_C7st0);
+  * PS2P_C6st0 : std_ulogic := @@ff(FS2P_C51, (FS2P_C61 | !PS2P_C6st0), False);
+  * FS2P_C71 : std_ulogic := (PS2P_C7st0 & !PS2P_C8st0);
+  * PS2P_C7st0 : std_ulogic := @@ff(FS2P_C61, (FS2P_C71 | !PS2P_C7st0), False);
+  * FS2P_C81 : std_ulogic := (N_FS2P_C81_36 & N_FS2P_C81_SSW_37);
+  * PS2P_C8st0 : std_ulogic := @@ff(FS2P_C71, (FS2P_C81 | !PS2P_C8st0), False);
+  * N_ow_IAck_0 : std_ulogic := FP281;
+  * N_ow_ShiftEnable_1 : std_ulogic := (FS2P_C01 | FS2P_C11 | FS2P_C21 | FS2P_C31 | FS2P_C41 | FS2P_C51 | FS2P_C61 | FS2P_C71);
+  * N_ow_LinkOut_2 : std_ulogic := (FP2S_C01 | FS3_cnd1 | FS3_cnd0 | (FP2S_C11 & @S_IData(0)) | (FP2S_C21 & @S_IData(1)) | (FP2S_C31 & @S_IData(2)) | (FP2S_C41 & @S_IData(3)) | (FP2S_C51 & @S_IData(4)) | (FP2S_C61 & @S_IData(5)) | (FP2S_C71 & @S_IData(6)) | (FP2S_C81 & @S_IData(7)));
+  * N_ow_QValid_3 : std_ulogic := PP14st0;
+  * N_FS10_4 : std_ulogic := !PP1st0;
+  * N_FS10_SSW_5 : std_ulogic := (N_FP281_SSR_21 | N_FS2P_C81_SSR_38);
+  * N_FS10_SSR_6 : std_ulogic := N_FS10_4;
+  * N_FP21_7 : std_ulogic := PP2st0;
+  * N_FP21_SSW_8 : std_ulogic := (N_FP281_SSR_23 | N_FS22_SSR_26);
+  * N_FP21_SSR_9 : std_ulogic := N_FP21_7;
+  * N_FP151_10 : std_ulogic := (PP15st0 & !PP16st0 & S_QAck);
+  * N_FP151_SSW_11 : std_ulogic := (N_FS40_SSR_15 & !N_FT9F2_SSR_35);
+  * N_FP151_SSR_12 : std_ulogic := N_FP151_10;
+  * N_FS40_13 : std_ulogic := !PP17st0;
+  * N_FS40_SSW_14 : std_ulogic := (N_FT9F2_SSR_35 | N_FP151_SSR_12);
+  * N_FS40_SSR_15 : std_ulogic := N_FS40_13;
+  * N_FP171_16 : std_ulogic := PP17st0;
+  * N_FP171_SSW_17 : std_ulogic := (N_FS3_cnd0_SSR_29 | N_FS3_cnd1_SSR_32);
+  * N_FP171_SSR_18 : std_ulogic := N_FP171_16;
+  * N_FP281_19 : std_ulogic := (PP28st0 & !PP11st0 & FS2_cnd0);
+  * N_FP281_SSW_20 : std_ulogic := N_FS10_SSR_6;
+  * N_FP281_SSR_21 : std_ulogic := (N_FP281_19 & N_FP281_SSW_22);
+  * N_FP281_SSW_22 : std_ulogic := N_FP21_SSR_9;
+  * N_FP281_SSR_23 : std_ulogic := (N_FP281_19 & N_FP281_SSW_20);
+  * N_FS22_24 : std_ulogic := (FS2_cnd1 & !PS2P_C0st0);
+  * N_FS22_SSR_26 : std_ulogic := N_FS22_24;
+  * N_FS3_cnd0_27 : std_ulogic := (PP14st0 & !PP15st0);
+  * N_FS3_cnd0_SSW_28 : std_ulogic := N_FP171_SSR_18;
+  * N_FS3_cnd0_SSR_29 : std_ulogic := N_FS3_cnd0_27;
+  * N_FS3_cnd1_30 : std_ulogic := (S_IValid & !PP2S_C0st0 & PP12st0);
+  * N_FS3_cnd1_SSW_31 : std_ulogic := (N_FP171_SSR_18 & !N_FS3_cnd0_SSR_29);
+  * N_FS3_cnd1_SSR_32 : std_ulogic := N_FS3_cnd1_30;
+  * N_FT9F2_33 : std_ulogic := (!PP28st0 & PP2S_C9st0);
+  * N_FT9F2_SSW_34 : std_ulogic := N_FS40_SSR_15;
+  * N_FT9F2_SSR_35 : std_ulogic := N_FT9F2_33;
+  * N_FS2P_C81_36 : std_ulogic := (PS2P_C8st0 & !PP14st0 & PP29st0);
+  * N_FS2P_C81_SSW_37 : std_ulogic := (N_FS10_SSR_6 & !N_FP281_SSR_21);
+  * N_FS2P_C81_SSR_38 : std_ulogic := N_FS2P_C81_36;
+Verifying RTL equations:
+Verifying element P1: ICell
+  Has 8 indeps=[S_LinkIn, PP11st0, PP14st0, PP1st0, PP29st0, PP2st0, PP28st0, PS2P_C8st0]
+Verifying element P2: ICell
+  Has 6 indeps=[PP11st0, PP1st0, S_LinkIn, PP2st0, PP28st0, PS2P_C0st0]
+Verifying element P11: ICell
+  Has 7 indeps=[S_IValid, PP11st0, PP2st0, S_LinkIn, PP12st0, PP1st0, PP28st0]
+Verifying element P12: ICell
+  Has 7 indeps=[S_IValid, PP11st0, PP2S_C0st0, PP14st0, PP17st0, PP12st0, PP15st0]
+Verifying element P14: ICell
+  Has 10 indeps=[S_LinkIn, PS2P_C8st0, PP14st0, PP1st0, PP17st0, PP15st0, PP29st0, PP2st0, PP28st0, PP11st0]
+Verifying element P15: ICell
+  Has 7 indeps=[PP16st0, PP14st0, PP17st0, PP15st0, S_QAck, PP28st0, PP2S_C9st0]
+Verifying element P16: ICell
+  Has 7 indeps=[PP16st0, PP15st0, PP17st0, S_QAck, PP29st0, PP28st0, PP2S_C9st0]
+Verifying element P17: ICell
+  Has 10 indeps=[PP16st0, PP2S_C0st0, S_QAck, PP17st0, S_IValid, PP2S_C9st0, PP14st0, PP12st0, PP28st0, PP15st0]
+Verifying element P28: ICell
+  Has 7 indeps=[PP11st0, PP1st0, PP17st0, PP2S_C9st0, PP2st0, S_LinkIn, PP28st0]
+Verifying element P29: ICell
+  Has 10 indeps=[PP16st0, PP14st0, PS2P_C8st0, PP29st0, PP1st0, S_QAck, PP2st0, S_LinkIn, PP28st0, PP11st0]
+Verifying element T1: Gate
+  Has 3 indeps=[S_LinkIn, PP2st0, PP1st0]
+Verifying element S1: Select_Pri
+  Has 8 indeps=[S_LinkIn, PP11st0, PP14st0, PP1st0, PP29st0, PP2st0, PP28st0, PS2P_C8st0]
+Verifying element S2: Switch_Cond
+  Has 6 indeps=[PP11st0, PP2st0, PP1st0, S_LinkIn, PS2P_C0st0, PP28st0]
+Verifying element T10J: Join
+  Has 5 indeps=[PP11st0, PP1st0, PP2st0, S_LinkIn, PP28st0]
+Verifying element T10F: Fork
+  Has 5 indeps=[PP11st0, PP1st0, PP2st0, S_LinkIn, PP28st0]
+Verifying element T11: Gate
+  Has 3 indeps=[S_IValid, PP11st0, PP12st0]
+Verifying element T8J: Join
+  Has 6 indeps=[S_IValid, PP2S_C0st0, PP14st0, PP17st0, PP12st0, PP15st0]
+Verifying element T8G: Gate
+  Has 6 indeps=[S_IValid, PP2S_C0st0, PP14st0, PP17st0, PP12st0, PP15st0]
+Verifying element S3: Switch_Pri
+  Has 6 indeps=[S_IValid, PP2S_C0st0, PP14st0, PP17st0, PP15st0, PP12st0]
+Verifying element S4: Select_Pri
+  Has 6 indeps=[PP16st0, S_QAck, PP17st0, PP2S_C9st0, PP28st0, PP15st0]
+Verifying element T9F: Fork
+  Has 3 indeps=[PP17st0, PP2S_C9st0, PP28st0]
+Verifying element P2S_C0: ICell
+  Has 7 indeps=[S_IValid, PP12st0, PP2S_C0st0, PP14st0, PP2S_C1st0, PP17st0, PP15st0]
+Verifying element P2S_C1: ICell
+  Has 3 indeps=[PP2S_C0st0, PP2S_C2st0, PP2S_C1st0]
+Verifying element P2S_C2: ICell
+  Has 3 indeps=[PP2S_C1st0, PP2S_C2st0, PP2S_C3st0]
+Verifying element P2S_C3: ICell
+  Has 3 indeps=[PP2S_C3st0, PP2S_C2st0, PP2S_C4st0]
+Verifying element P2S_C4: ICell
+  Has 3 indeps=[PP2S_C3st0, PP2S_C5st0, PP2S_C4st0]
+Verifying element P2S_C5: ICell
+  Has 3 indeps=[PP2S_C4st0, PP2S_C5st0, PP2S_C6st0]
+Verifying element P2S_C6: ICell
+  Has 3 indeps=[PP2S_C7st0, PP2S_C5st0, PP2S_C6st0]
+Verifying element P2S_C7: ICell
+  Has 3 indeps=[PP2S_C7st0, PP2S_C6st0, PP2S_C8st0]
+Verifying element P2S_C8: ICell
+  Has 3 indeps=[PP2S_C7st0, PP2S_C8st0, PP2S_C9st0]
+Verifying element P2S_C9: ICell
+  Has 4 indeps=[PP17st0, PP2S_C8st0, PP28st0, PP2S_C9st0]
+Verifying element S2P_C0: ICell
+  Has 4 indeps=[S_LinkIn, PS2P_C0st0, PS2P_C1st0, PP2st0]
+Verifying element S2P_C1: ICell
+  Has 3 indeps=[PS2P_C0st0, PS2P_C1st0, PS2P_C2st0]
+Verifying element S2P_C2: ICell
+  Has 3 indeps=[PS2P_C3st0, PS2P_C1st0, PS2P_C2st0]
+Verifying element S2P_C3: ICell
+  Has 3 indeps=[PS2P_C3st0, PS2P_C2st0, PS2P_C4st0]
+Verifying element S2P_C4: ICell
+  Has 3 indeps=[PS2P_C3st0, PS2P_C5st0, PS2P_C4st0]
+Verifying element S2P_C5: ICell
+  Has 3 indeps=[PS2P_C4st0, PS2P_C5st0, PS2P_C6st0]
+Verifying element S2P_C6: ICell
+  Has 3 indeps=[PS2P_C6st0, PS2P_C5st0, PS2P_C7st0]
+Verifying element S2P_C7: ICell
+  Has 3 indeps=[PS2P_C6st0, PS2P_C8st0, PS2P_C7st0]
+Verifying element S2P_C8: ICell
+  Has 9 indeps=[PS2P_C7st0, PS2P_C8st0, PP14st0, PP1st0, PP29st0, PP2st0, S_LinkIn, PP28st0, PP11st0]
+Verifying element T3J: Join
+  Has 8 indeps=[S_LinkIn, PS2P_C8st0, PP14st0, PP1st0, PP29st0, PP2st0, PP28st0, PP11st0]
+Verifying element T3F: Fork
+  Has 8 indeps=[S_LinkIn, PS2P_C8st0, PP14st0, PP1st0, PP29st0, PP2st0, PP28st0, PP11st0]
+Verifying element T5J: Join
+  Has 3 indeps=[PP17st0, PP15st0, PP14st0]
+Verifying element T6F: Fork
+  Has 6 indeps=[PP16st0, S_QAck, PP17st0, PP15st0, PP28st0, PP2S_C9st0]
+Verifying element T6G: Gate
+  Has 6 indeps=[PP16st0, S_QAck, PP17st0, PP15st0, PP28st0, PP2S_C9st0]
+Verifying element T7G: Gate
+  Has 3 indeps=[PP16st0, S_QAck, PP29st0]
+Verify done: elements: 46, states: 6144, avg 133 states/elem
+Writing tslink_ct.vhd
